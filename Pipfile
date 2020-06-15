@@ -8,8 +8,9 @@ verify_ssl = true
 [packages]
 flask = "*"
 flask-admin = "*"
-flask-login = "*"
 flask-mongoengine = "*"
+flask-security = "*"
+flask-restx = "*"
 
 [requires]
 python_version = "3.6"
