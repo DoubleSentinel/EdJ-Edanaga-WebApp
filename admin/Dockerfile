@@ -1,20 +1,12 @@
-FROM ubuntu
+FROM python:3.8.3-buster
 
-RUN apt-get update
-RUN apt-get install -y python3
-RUN apt-get install -y python3-pip
+WORKDIR /opt/source-code
 
-RUN python3 -m pip install flask
-RUN python3 -m pip install mongoengine
-RUN python3 -m pip install flask-mongoengine
-RUN python3 -m pip install email_validator
-RUN python3 -m pip install flask-security
-RUN python3 -m pip install flask-admin
+COPY ./ ./
+
+RUN pip install pipenv
+RUN pipenv install --system --deploy --ignore-pipfile 
 
 EXPOSE 5000
 
-COPY . /opt/source-code
-
-ENV FLASK_APP=/opt/source-code/app.py
-
-CMD flask run
+CMD uwsgi --http-socket :5000 --wsgi-file app.py
