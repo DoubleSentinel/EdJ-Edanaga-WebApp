@@ -10,9 +10,9 @@ flask = "*"
 flask-admin = "*"
 flask-mongoengine = "*"
 flask-security = "*"
-flask-restx = "*"
 email-validator = "*"
 uwsgi = "*"
+mongoengine = "*"
 
 [requires]
 python_version = "3.6"

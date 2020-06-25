@@ -2,7 +2,9 @@
 
 _To run the admin application for development, run it with pipenv_
 
+1. Install dependencies
 `pipenv install`
+2. Run development environment
 `pipenv run flask run`
 
 
