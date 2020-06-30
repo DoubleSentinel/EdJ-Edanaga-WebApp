@@ -1,0 +1,15 @@
+version: "3"
+services:
+    admin:
+        build: ./admin
+    api:
+        build: ./rest
+    unity:
+        build: ./unity
+    db:
+        image: mongo:latest
+        ports:
+            - "27017-27019:27017-27019"
+        volumes:
+            - ../edanaga-mongodb:/data/db
+
