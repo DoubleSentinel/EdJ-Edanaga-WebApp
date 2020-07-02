@@ -7,9 +7,7 @@ services:
     unity:
         build: ./unity
     db:
-        image: mongo:latest
-        ports:
-            - "27017-27019:27017-27019"
+        image: mongo
         volumes:
             - ../edanaga-mongodb:/data/db
 

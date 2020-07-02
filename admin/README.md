@@ -4,7 +4,9 @@ _To run the admin application for development, run it with pipenv_
 
 1. Install dependencies
 `pipenv install`
-2. Run development environment
+2. Launch mongoDB
+`docker run -p 27017-27019:27017-27019 -v /path/to/local/volume:/data/db mongo:latest --auth`
+3. Run development environment
 `pipenv run flask run`
 
 
@@ -19,3 +21,4 @@ _To run the admin application on deploy target_
       `docker build ./ -t edanaga/admin`
 3. Instanciate container with
    `docker run --name edanaga_admin edanaga/admin`
+

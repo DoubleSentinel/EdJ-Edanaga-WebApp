@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+    admin:
+        build:
+            context: ./admin
+            dockerfile: dev.Dockerfile
+        volumes:
+            - "./admin/app:/opt/source-code"
+        ports:
+            - "5000:5000"
+    api:
+        build:
+            context: ./rest
+            dockerfile: dev.Dockerfile
+        volumes:
+            - "./rest/app:/opt/source-code"
+        ports:
+            - "5001:5000"
+    unity:
+        build:
+            context: ./unity
+            dockerfile: Dockerfile
+        volumes:
+            - "./unity/app:/opt/source-code"
+        ports:
+            - "5002:5000"
+    db:
+        image: mongo
+        ports:
+            - "27017-27019:27017-27019"
