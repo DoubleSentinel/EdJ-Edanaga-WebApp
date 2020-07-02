@@ -85,4 +85,4 @@ venv.bak/
 *.sw[op]
 
 # Project specific ignores
-#config.py
+config.py
