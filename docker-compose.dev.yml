@@ -9,6 +9,8 @@ services:
             - "./admin/app:/opt/source-code"
         ports:
             - "5000:5000"
+        depends_on:
+            - db
     api:
         build:
             context: ./rest
@@ -17,6 +19,8 @@ services:
             - "./rest/app:/opt/source-code"
         ports:
             - "5001:5000"
+        depends_on:
+            - db
     unity:
         build:
             context: ./unity
@@ -26,6 +30,10 @@ services:
         ports:
             - "5002:5000"
     db:
-        image: mongo
+        image: mongo:3.4.2
+        # restart: always
+        environment:
+            - MONGO_INITDB_ROOT_USERNAME=admin
+            - MONGO_INITDB_ROOT_PASSWORD=admin1234
         ports:
-            - "27017-27019:27017-27019"
+            - "27017:27017"
