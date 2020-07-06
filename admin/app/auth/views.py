@@ -19,7 +19,7 @@ from utility import UserAccessFactory
 class SecuredHomeView(UserAccessFactory('user'), AdminIndexView):
     @expose('/', methods=['GET', 'POST'])
     def index(self):
-            return "Secured admin view"
+        return self.render('index.html')
 
 class SuperUserView(UserAccessFactory('superuser'), ModelView):
 
@@ -33,10 +33,6 @@ class SuperUserView(UserAccessFactory('superuser'), ModelView):
         # db when a user is edited from flask-admin
         if is_created:
             model.password = encrypt_password(model.password)
-            
-            if not model.roles:
-                model.roles.append(Role.objects.get(name='reviewer'))
-
 
 
 class SuperRoleView(UserAccessFactory('superuser'), ModelView):
