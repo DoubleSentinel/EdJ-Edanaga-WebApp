@@ -81,7 +81,8 @@ ENV/
 env.bak/
 venv.bak/
 
-# VIM IDE
+# IDE
+.idea
 *.sw[op]
 
 # Project specific ignores
