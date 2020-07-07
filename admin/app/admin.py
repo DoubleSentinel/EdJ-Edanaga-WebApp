@@ -9,12 +9,14 @@ from flask_wtf.csrf import CSRFProtect
 from flask_security import Security, MongoEngineUserDatastore
 from flask_security.utils import encrypt_password
 
-
 from flask_admin import Admin, helpers
 from flask_admin.menu import MenuLink
 
 from auth.models import User, Role
 from auth.views import SecuredHomeView, SuperUserView, SuperRoleView
+
+from crud.models import UIText, Conversation, Scene
+from crud.views import UITextView, ConversationView, SceneView
 
 app = Flask(__name__)
 
@@ -33,11 +35,12 @@ csrf = CSRFProtect(app)
 
 # Create Flask-Admin support
 admin = Admin(
-        app,
-        "Edanaga", 
-        index_view=SecuredHomeView(url="/"),
-        template_mode='bootstrap3'
-    )
+    app,
+    "Edanaga",
+    index_view=SecuredHomeView(url="/"),
+    template_mode='bootstrap3'
+)
+
 
 # define a context processor for merging flask-admin's template context into the
 # flask-security views.
@@ -52,25 +55,27 @@ def security_context_processor():
 
 
 # Add views to Flask Admin for CRUD handling of website data
-#admin.add_view(MemberView(Member, MODEL_DESCRIPTIONS[Member][0]))
+admin.add_view(UITextView(UIText, "UI Translations", category="Game Content"))
+admin.add_view(ConversationView(Conversation, "Conversations", category="Game Content"))
+admin.add_view(SceneView(Scene, "Scenes' Translations", category="Game Content"))
 
 # Add views to Flask Admin for superuser to handle authentication
 admin.add_view(SuperUserView(User, "Users", category="Administration"))
 admin.add_view(SuperRoleView(Role, "User roles", category="Administration"))
 
+admin.add_link(
+    MenuLink(
+        name="Change password",
+        category="Session",
+        url=app.config["SECURITY_CHANGE_URL"],
+    )
+)
 # Adding links to handle session for users
 admin.add_link(
     MenuLink(
         name="Logout",
         category="Session",
         url=app.config["SECURITY_LOGOUT_URL"]
-    )
-)
-admin.add_link(
-    MenuLink(
-        name="Change password",
-        category="Session",
-        url=app.config["SECURITY_CHANGE_URL"],
     )
 )
 
@@ -95,4 +100,3 @@ if os.environ.get("FLASK_ENV", "") == "development":
                 roles=[user_role, super_user_role],
             )
             print("Test user created as: email= admin password= admin")
-
