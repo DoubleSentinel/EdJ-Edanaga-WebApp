@@ -39,6 +39,18 @@ admin = Admin(
         template_mode='bootstrap3'
     )
 
+# define a context processor for merging flask-admin's template context into the
+# flask-security views.
+@security.context_processor
+def security_context_processor():
+    return dict(
+        admin_base_template=admin.base_template,
+        admin_view=admin.index_view,
+        h=helpers,
+        get_url=url_for,
+    )
+
+
 # Add views to Flask Admin for CRUD handling of website data
 #admin.add_view(MemberView(Member, MODEL_DESCRIPTIONS[Member][0]))
 
@@ -56,7 +68,7 @@ admin.add_link(
 )
 admin.add_link(
     MenuLink(
-        name="",
+        name="Change password",
         category="Session",
         url=app.config["SECURITY_CHANGE_URL"],
     )
