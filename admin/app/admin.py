@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, url_for, abort, request
+from flask import Flask, render_template, redirect, url_for, abort, request, send_from_directory
 
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
@@ -56,7 +56,7 @@ def security_context_processor():
 
 # Add views to Flask Admin for CRUD handling of website data
 admin.add_view(UITextView(UIText, "UI Translations", category="Game Content"))
-admin.add_view(ConversationView(Conversation, "Conversations", category="Game Content"))
+# admin.add_view(ConversationView(Conversation, "Conversations", category="Game Content"))
 admin.add_view(SceneView(Scene, "Scenes' Translations", category="Game Content"))
 
 # Add views to Flask Admin for superuser to handle authentication
@@ -78,6 +78,7 @@ admin.add_link(
         url=app.config["SECURITY_LOGOUT_URL"]
     )
 )
+
 
 # defining test users for development mode
 if os.environ.get("FLASK_ENV", "") == "development":

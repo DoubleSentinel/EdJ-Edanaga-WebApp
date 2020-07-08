@@ -34,8 +34,8 @@ class SimpleMDETextAreaField(TextAreaField):
 
 # Model views for Flask-Admin
 class UITextView(UserAccessFactory('user'), ModelView):
-    #can_create = False
-    #can_delete = False
+    # can_create = False
+    # can_delete = False
 
     column_list = [
         "target_ui_name",
@@ -76,34 +76,12 @@ class UITextView(UserAccessFactory('user'), ModelView):
     }
 
 
-class ConversationView(UserAccessFactory('user'), ModelView):
-    def text_formatter(view, context, model, name):
-        try:
-            if len(model.text) > 100:
-                return model.text[:100] + ' ...'
-        except TypeError:
-            pass
-        return model.text
-
-    #can_create = False
-    #can_delete = False
-
-    column_list = [
-        "target_character",
-        "text",
-    ]
-
-    # column_default_sort = [('archived', False), ('priority', True), ('title', False)]
-
-    # create_template = 'admin/create/project.html'
-    # edit_template = 'admin/edit/project.html'
+class ConversationView(EmbeddedForm):
+    # can_create = False
+    # can_delete = False
 
     form_overrides = {
         'text': SimpleMDETextAreaField
-    }
-
-    column_formatters = {
-        'text': text_formatter,
     }
 
     form_args = {
@@ -126,8 +104,8 @@ class ConversationView(UserAccessFactory('user'), ModelView):
 
 
 class SceneView(UserAccessFactory('user'), ModelView):
-    #can_create = False
-    #can_delete = False
+    # can_create = False
+    # can_delete = False
 
     column_list = [
         "unity_scene_name",
@@ -136,6 +114,9 @@ class SceneView(UserAccessFactory('user'), ModelView):
 
     # create_template = 'admin/create/project.html'
     # edit_template = 'admin/edit/project.html'
+    extra_css = ["https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css"]
+    extra_js = ['http://cdn.jsdelivr.net/simplemde/latest/simplemde.min.js',
+                '/static/custom.JS']
 
     form_args = {
         'unity_scene_name': {
@@ -148,7 +129,13 @@ class SceneView(UserAccessFactory('user'), ModelView):
             'label': "Conversation",
         },
     }
-
+    form_subdocuments = {
+        'conversation': {
+            'form_subdocuments': {
+                None: ConversationView(),
+            }
+        }
+    }
     column_labels = {
         'unity_scene_name': "Target Unity Scene",
         'language': "Language",

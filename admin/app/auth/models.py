@@ -8,12 +8,14 @@ from mongoengine.fields import (
 )
 from mongoengine import Document
 
+
 class Role(Document, RoleMixin):
     name = StringField(max_length=80, unique=True)
     description = StringField(max_length=255)
 
     def __unicode__(self):
         return self.name
+
 
 class User(Document, UserMixin):
     email = StringField(max_length=255)
