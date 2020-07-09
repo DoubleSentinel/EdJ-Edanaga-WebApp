@@ -1,13 +1,32 @@
-from flask import Flask, render_template, redirect, url_for, abort, request
+from flask import Flask
 
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
 
-from flask_restx import Api, Resource, fields
+from flask_mongorest import MongoRest, operators, methods
+from flask_mongorest.views import ResourceView
+
+from resources import SceneResource, UITextResource
 
 app = Flask(__name__)
 
-@app.route("/")
-def home():
-    return "This is the api interface"
+# configuration from file
+app.config.from_pyfile("./config.py")
 
+# Flask MongoEngine connection
+db = MongoEngine(app)
+
+# Flask MongoRest init
+api = MongoRest(app)
+
+
+@api.register(name='scenes', url='/scenes/')
+class SceneView(ResourceView):
+    resource = SceneResource
+    methods = [methods.Fetch, methods.List]
+
+
+@api.register(name='uitext', url='/ui/')
+class UIView(ResourceView):
+    resource = UITextResource
+    methods = [methods.Fetch, methods.List]
