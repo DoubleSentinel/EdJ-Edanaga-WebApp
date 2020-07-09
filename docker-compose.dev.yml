@@ -17,6 +17,7 @@ services:
             dockerfile: dev.Dockerfile
         volumes:
             - "./rest/app:/opt/source-code"
+            - "./admin/app/crud/models.py:/opt/source-code/"
         ports:
             - "5001:5000"
         depends_on:
@@ -33,7 +34,7 @@ services:
         image: mongo:3.4.2
         # restart: always
         environment:
-            - MONGO_INITDB_ROOT_USERNAME=admin
-            - MONGO_INITDB_ROOT_PASSWORD=admin1234
+            - MONGO_INITDB_ROOT_USERNAME=${MONGOUSER}
+            - MONGO_INITDB_ROOT_PASSWORD=${MONGOPASS}
         ports:
             - "27017:27017"
