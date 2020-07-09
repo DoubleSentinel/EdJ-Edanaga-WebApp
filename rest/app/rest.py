@@ -3,7 +3,7 @@ from flask import Flask
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
 
-from flask_mongorest import MongoRest, operators, methods
+from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
 from resources import SceneResource, UITextResource
