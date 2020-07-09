@@ -101,3 +101,6 @@ if os.environ.get("FLASK_ENV", "") == "development":
                 roles=[user_role, super_user_role],
             )
             print("Test user created as: email= admin password= admin")
+        except mongoerrors.MultipleObjectsReturned:
+            User.objects(email="admin").first().delete()
+

@@ -2,7 +2,6 @@ from mongoengine.fields import (
     BooleanField,
     DateTimeField,
     EmbeddedDocumentField,
-    GenericReferenceField,
     IntField,
     ListField,
     ReferenceField,
