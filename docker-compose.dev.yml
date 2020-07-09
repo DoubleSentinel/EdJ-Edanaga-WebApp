@@ -7,6 +7,13 @@ services:
             dockerfile: dev.Dockerfile
         volumes:
             - "./admin/app:/opt/source-code"
+        environment:
+            - MONGODB=${MONGODB}
+            - MONGOUSER=${MONGOUSER}
+            - MONGOPASS=${MONGOPASS}
+            - MONGOHOST=${MONGOHOST}
+            - SECRET_KEY=${ADMIN_SECRET_KEY}
+            - SECURITY_PASSWORD_SALT=${ADMIN_SECURITY_SALT}
         ports:
             - "5000:5000"
         depends_on:
@@ -17,7 +24,12 @@ services:
             dockerfile: dev.Dockerfile
         volumes:
             - "./rest/app:/opt/source-code"
-            - "./admin/app/crud/models.py:/opt/source-code/"
+            - "./admin/app/crud/models.py:/opt/source-code/shared_admin"
+        environment:
+            - MONGODB=${MONGODB}
+            - MONGOUSER=${MONGOUSER}
+            - MONGOPASS=${MONGOPASS}
+            - MONGOHOST=${MONGOHOST}
         ports:
             - "5001:5000"
         depends_on:
