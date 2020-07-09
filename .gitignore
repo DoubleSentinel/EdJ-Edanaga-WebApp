@@ -84,6 +84,3 @@ venv.bak/
 # IDE
 .idea
 *.sw[op]
-
-# Project specific ignores
-config.py
