@@ -11,6 +11,8 @@ flask-mongoengine = "*"
 mongoengine = "*"
 uwsgi = "*"
 flask-mongorest = "*"
+mimerender = "*"
+cleancat = "*"
 
 [requires]
 python_version = "3.6"

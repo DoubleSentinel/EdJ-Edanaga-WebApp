@@ -24,7 +24,7 @@ services:
             dockerfile: dev.Dockerfile
         volumes:
             - "./rest/app:/opt/source-code"
-            - "./admin/app/crud/models.py:/opt/source-code/shared_admin"
+            - "./admin/app/crud/models.py:/opt/source-code/models.py"
         environment:
             - MONGODB=${MONGODB}
             - MONGOUSER=${MONGOUSER}
