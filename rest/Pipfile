@@ -7,10 +7,10 @@ verify_ssl = true
 
 [packages]
 flask = "*"
-flask-restx = "*"
 flask-mongoengine = "*"
 mongoengine = "*"
 uwsgi = "*"
+flask-mongorest = "*"
 
 [requires]
 python_version = "3.6"
