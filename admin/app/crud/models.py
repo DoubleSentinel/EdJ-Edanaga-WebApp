@@ -11,14 +11,19 @@ from mongoengine.fields import (
 from mongoengine import Document, EmbeddedDocument, CASCADE, PULL
 
 
-class UIText(Document):
-    target_ui_name = StringField()
-    language = StringField()
-    text = StringField()
+class UIElement(EmbeddedDocument):
+    gameobject_id = StringField()
     description = StringField()
+    text_value = StringField()
+
+
+class UITranslations(Document):
+    language = StringField()
+    scene = StringField()
+    elements = ListField(EmbeddedDocumentField(UIElement))
 
     def __unicode__(self):
-        return f"{self.target_ui_name}_{self.language.upper()}"
+        return f"{self.scene}_{self.language.upper()}"
 
 
 class Conversation(EmbeddedDocument):

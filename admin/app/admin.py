@@ -15,8 +15,8 @@ from flask_admin.menu import MenuLink
 from auth.models import User, Role
 from auth.views import SecuredHomeView, SuperUserView, SuperRoleView
 
-from crud.models import UIText, Conversation, Scene
-from crud.views import UITextView, ConversationView, SceneView
+from crud.models import UITranslations, UIElement, Conversation, Scene
+from crud.views import UITranslationsView, ConversationView, SceneView
 
 app = Flask(__name__)
 
@@ -55,8 +55,7 @@ def security_context_processor():
 
 
 # Add views to Flask Admin for CRUD handling of website data
-admin.add_view(UITextView(UIText, "UI Translations", category="Game Content"))
-# admin.add_view(ConversationView(Conversation, "Conversations", category="Game Content"))
+admin.add_view(UITranslationsView(UITranslations, "UI Translations", category="Game Content"))
 admin.add_view(SceneView(Scene, "Scenes' Translations", category="Game Content"))
 
 # Add views to Flask Admin for superuser to handle authentication

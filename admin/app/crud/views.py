@@ -9,7 +9,8 @@ from wtforms import TextAreaField, SelectField, HiddenField, MultipleFileField, 
 from wtforms.widgets import TextArea
 
 from .models import (
-    UIText,
+    UITranslations,
+    UIElement,
     Conversation,
     Scene)
 
@@ -32,47 +33,27 @@ class SimpleMDETextAreaField(TextAreaField):
     widget = SimpleMDETextAreaWidget()
 
 
-# Model views for Flask-Admin
-class UITextView(UserAccessFactory('user'), ModelView):
+# Embedded forms for Flask-Admin
+class UIElementView(EmbeddedForm):
     # can_create = False
     # can_delete = False
 
-    column_list = [
-        "target_ui_name",
-        "language",
-        "description",
-        "text",
-    ]
-
-    # column_default_sort = [('archived', False), ('priority', True), ('title', False)]
-
-    # create_template = 'admin/create/project.html'
-    # edit_template = 'admin/edit/project.html'
-
-    # form_overrides = {
-    #     'description': SimpleMDETextAreaField
-    # }
-
     form_args = {
-        'target_ui_name': {
-            'label': "Identifier for the target UI element in Unity.",
-        },
-        'language': {
-            'label': "Language of the UI element text",
+        'gameobject_id': {
+            'label': "Name of the GameObject in Unity",
         },
         'description': {
-            'label': "Description to access the UI element on the game",
+            'label': "Location of the UIElement",
         },
-        'text': {
-            'label': "UI element's text'",
+        'text_value': {
+            'label': "Text written on the UIElement",
         },
     }
 
     column_labels = {
-        'target_ui_name': "UI identifier",
-        'language': "Language of the UI",
-        'description': "Where the UI element is",
-        'text': "UI element's text",
+        'gameobject_id': "Character",
+        'description': "Language",
+        'text_value': "Text",
     }
 
 
@@ -100,6 +81,43 @@ class ConversationView(EmbeddedForm):
         'target_character': "Character",
         'language': "Language",
         'text': "Text",
+    }
+
+
+# Model views for Flask-Admin
+class UITranslationsView(UserAccessFactory('user'), ModelView):
+    # can_create = False
+    # can_delete = False
+
+    column_list = [
+        "language",
+        "scene",
+    ]
+
+    # column_default_sort = [('archived', False), ('priority', True), ('title', False)]
+
+    # create_template = 'admin/create/project.html'
+    # edit_template = 'admin/edit/project.html'
+
+    # form_overrides = {
+    #     'description': SimpleMDETextAreaField
+    # }
+
+    form_args = {
+        'language': {
+            'label': "UI Language",
+        },
+        'scene': {
+            'label': "Scene for this specific group of UI elements",
+        },
+        'elements': {
+            'label': "List of elements present in the scene",
+        },
+    }
+
+    column_labels = {
+        'language': "Language of the UI",
+        'scene': "Scene for this specific group of UI elements",
     }
 
 

@@ -1,4 +1,4 @@
-from models import UIText, Conversation, Scene
+from models import UITranslations, UIElement, Conversation, Scene
 
 from flask_mongorest.resources import Resource
 from flask_mongorest import operators
@@ -6,6 +6,10 @@ from flask_mongorest import operators
 
 class ConversationResource(Resource):
     document = Conversation
+
+
+class UIElementResource(Resource):
+    document = UIElement
 
 
 class SceneResource(Resource):
@@ -23,5 +27,13 @@ class SceneResource(Resource):
     }
 
 
-class UITextResource(Resource):
-    document = UIText
+class UITranslationsResource(Resource):
+    document = UITranslations
+
+    related_resources = {
+        'elements': UIElementResource
+    }
+
+    filters = {
+        'language': [operators.Exact]
+    }

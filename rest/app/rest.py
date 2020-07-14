@@ -6,7 +6,7 @@ from mongoengine import errors as mongoerrors
 from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
-from resources import SceneResource, UITextResource
+from resources import SceneResource, UITranslationsResource
 
 app = Flask(__name__)
 
@@ -26,7 +26,7 @@ class SceneView(ResourceView):
     methods = [methods.Fetch, methods.List]
 
 
-@api.register(name='uitext', url='/ui/')
-class UIView(ResourceView):
-    resource = UITextResource
+@api.register(name='ui', url='/ui/')
+class UITranslationsView(ResourceView):
+    resource = UITranslationsResource
     methods = [methods.Fetch, methods.List]
