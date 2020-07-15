@@ -13,6 +13,7 @@ uwsgi = "*"
 flask-mongorest = "*"
 mimerender = "*"
 cleancat = "*"
+flask-cors = "*"
 
 [requires]
 python_version = "3.6"
