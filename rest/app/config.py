@@ -7,3 +7,5 @@ MONGODB_SETTINGS = {
     'host': os.environ.get("MONGOHOST")
 }
 
+CORS_HEADERS = "Content-Type"
+
