@@ -30,6 +30,8 @@ services:
             - MONGOUSER=${MONGOUSER}
             - MONGOPASS=${MONGOPASS}
             - MONGOHOST=${MONGOHOST}
+        # /!\ WARNING: this port forwarding is meant for development use ONLY
+        # Unity engine cannot resolve api.localhost, but it resolves localhost:5001
         ports:
            - "5001:5000"
         depends_on:
