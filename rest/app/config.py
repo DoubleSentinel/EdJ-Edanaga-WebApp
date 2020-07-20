@@ -6,6 +6,3 @@ MONGODB_SETTINGS = {
     'password': os.environ.get("MONGOPASS"),
     'host': os.environ.get("MONGOHOST")
 }
-
-CORS_HEADERS = "Content-Type"
-
