@@ -38,7 +38,7 @@ services:
             - db
     db:
         image: mongo:3.4.2
-        volumas:
+        volumes:
             - "../edanaga-mongo/:/var/lib/mongodb"
         environment:
             - MONGO_INITDB_ROOT_USERNAME=${MONGOUSER}
