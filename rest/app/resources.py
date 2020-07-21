@@ -35,5 +35,6 @@ class UITranslationsResource(Resource):
     }
 
     filters = {
-        'language': [operators.Exact]
+        'language': [operators.Exact],
+        'scene': [operators.Exact]
     }

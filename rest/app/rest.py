@@ -26,14 +26,12 @@ cors = CORS(app)
 
 
 @api.register(name='scenes', url='/scenes/')
-@cross_origin()
 class SceneView(ResourceView):
     resource = SceneResource
     methods = [methods.Fetch, methods.List]
 
 
 @api.register(name='ui', url='/ui/')
-@cross_origin()
 class UITranslationsView(ResourceView):
     resource = UITranslationsResource
     methods = [methods.Fetch, methods.List]
