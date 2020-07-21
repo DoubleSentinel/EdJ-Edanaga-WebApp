@@ -6,8 +6,6 @@ from mongoengine import errors as mongoerrors
 from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
-from flask_cors import CORS, cross_origin
-
 from resources import SceneResource, UITranslationsResource
 
 app = Flask(__name__)
@@ -20,9 +18,6 @@ db = MongoEngine(app)
 
 # Flask MongoRest init
 api = MongoRest(app)
-
-# Flask CORS init
-cors = CORS(app)
 
 
 @api.register(name='scenes', url='/scenes/')
