@@ -5,7 +5,7 @@ if ! [ -x "$(command -v docker-compose)" ]; then
   exit 1
 fi
 
-domains=(edanaga.ch www.edanaga.ch, api.edanaga.ch, admin.edanaga.ch)
+domains=(edanaga.ch www.edanaga.ch api.edanaga.ch admin.edanaga.ch)
 rsa_key_size=4096
 data_path="."
 email="" # Adding a valid address is strongly recommended

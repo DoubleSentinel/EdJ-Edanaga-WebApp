@@ -44,6 +44,7 @@ services:
             - MONGO_INITDB_ROOT_USERNAME=${MONGOUSER}
             - MONGO_INITDB_ROOT_PASSWORD=${MONGOPASS}
         restart: always
+        command: "/bin/sh -c 'while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\"'"
 
     nginx:
         image: nginx:alpine
