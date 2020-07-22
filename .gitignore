@@ -84,3 +84,6 @@ venv.bak/
 # IDE
 .idea
 *.sw[op]
+
+# Unity
+!unity/app/Build*
