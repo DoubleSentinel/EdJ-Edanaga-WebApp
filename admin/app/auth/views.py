@@ -21,18 +21,23 @@ class SecuredHomeView(UserAccessFactory('user'), AdminIndexView):
     def index(self):
         return self.render('index.html')
 
-class SuperUserView(UserAccessFactory('superuser'), ModelView):
 
+class SuperUserView(UserAccessFactory('superuser'), ModelView):
     column_list = [
-                "email",
-                "roles",
-            ]
+        "email",
+        "roles",
+    ]
 
     def on_model_change(self, form, model, is_created):
         # overriding this function to ensure the password is encrypted in
         # db when a user is edited from flask-admin
         if is_created:
             model.password = encrypt_password(model.password)
+        else:
+            edited_user = User.objects.get(email=model.email)
+            # if the password was modified
+            if edited_user.password != encrypt_password(model.password):
+                model.password = encrypt_password(model.password)
 
 
 class SuperRoleView(UserAccessFactory('superuser'), ModelView):
