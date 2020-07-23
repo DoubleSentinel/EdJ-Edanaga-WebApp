@@ -85,5 +85,9 @@ venv.bak/
 .idea
 *.sw[op]
 
+# Shared Docker file ghosts
+rest/app/models.py
+unity/app/models.py
+
 # Unity
 !unity/app/Build*
