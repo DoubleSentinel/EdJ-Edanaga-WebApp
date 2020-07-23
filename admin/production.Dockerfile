@@ -8,7 +8,7 @@ COPY ./Pipfile* ./
 RUN pip install pipenv
 RUN pipenv install --system --deploy --ignore-pipfile 
 
-COPY ./ ./
+COPY ./app ./
 
 EXPOSE 5000
 
