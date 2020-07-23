@@ -14,8 +14,6 @@ services:
             - MONGOHOST=${MONGOHOST}
             - SECRET_KEY=${ADMIN_SECRET_KEY}
             - SECURITY_PASSWORD_SALT=${ADMIN_SECURITY_SALT}
-       # ports:
-       #     - "5000:5000"
         depends_on:
             - db
     api:
@@ -39,21 +37,22 @@ services:
     unity:
         build:
             context: ./unity
-            dockerfile: Dockerfile
+            dockerfile: dev.Dockerfile
         volumes:
             - "./unity/app:/opt/source-code"
-       # ports:
-       #     - "5002:5000"
+            - "./admin/app/crud/models.py:/opt/source-code/models.py"
+        environment:
+            - MONGODB=${MONGODB}
+            - MONGOUSER=${MONGOUSER}
+            - MONGOPASS=${MONGOPASS}
+            - MONGOHOST=${MONGOHOST}
         depends_on:
             - db
     db:
         image: mongo:3.4.2
-        # restart: always
         environment:
             - MONGO_INITDB_ROOT_USERNAME=${MONGOUSER}
             - MONGO_INITDB_ROOT_PASSWORD=${MONGOPASS}
-       # ports:
-       #     - "27017:27017"
 
     nginx:
         image: nginx:alpine
@@ -65,4 +64,3 @@ services:
             - admin
             - api
             - unity
-        # restart: always
