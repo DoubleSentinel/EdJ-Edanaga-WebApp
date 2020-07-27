@@ -7,9 +7,18 @@ Edanaga
 
 {% block content %}
 <div class="container">
-  <h1 class="display-2 col-sm-12">{{ welcome_title }}</h1>
+  {% if not error %}
+  <h1 class="display-2 col-sm-12">
+    {{ welcome_title }}
+  </h1>
   <p class="h2 col-sm-12">
     {{ welcome_text }}
   </p>
+  {% else %}
+  <h1 class="display-4 col-sm-12">
+    {{ error }}
+  </h1>
+  {% endif %}
+
 </div>
 {% endblock %}

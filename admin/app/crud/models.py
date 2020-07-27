@@ -11,6 +11,18 @@ from mongoengine.fields import (
 from mongoengine import Document, EmbeddedDocument, CASCADE, PULL
 
 
+class HomeScreen(Document):
+    language = StringField()
+    welcome_title = StringField()
+    welcome_text = StringField()
+
+
+class Invitations(Document):
+    language = StringField()
+    token_url = StringField()
+    active = BooleanField()
+
+
 class UIElement(EmbeddedDocument):
     gameobject_id = StringField()
     description = StringField()

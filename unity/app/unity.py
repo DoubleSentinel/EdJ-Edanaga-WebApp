@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for, abort, request, sen
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
 
-#from models import Invitations
+from models import Invitations, HomeScreen
 
 app = Flask(__name__)
 
@@ -15,11 +15,36 @@ app.config.from_pyfile("./config.py")
 db = MongoEngine(app)
 
 
-@app.route("/<language>")
+@app.route("/<language>/")
 @app.route("/", defaults={'language': 'en'})
 def home(language):
-    return render_template(
-        "home.html",
-        welcome_title="Welcome to Edanaga",
-        welcome_text="Filler text"
-    )
+    try:
+        content = HomeScreen.objects.get(language=language.upper())
+
+        return render_template(
+            "home.html",
+            welcome_title=content.welcome_title,
+            welcome_text=content.welcome_text
+        )
+    except mongoerrors.DoesNotExist:
+        return render_template(
+            "home.html",
+            error="The requested language translation of the website isn't available."
+        )
+
+
+@app.route("/<language>/<token>")
+def unity(language, token):
+    if not token:
+        redirect(url_for('.home', language))
+    else:
+        try:
+            if Invitations.objects.get(token_url=token).active:
+                return render_template('unity.html')
+            else:
+                raise mongoerrors.DoesNotExist
+        except mongoerrors.DoesNotExist:
+            return render_template(
+                "home.html",
+                error="It seems your invitation link is either expired, inactive, or erroneous."
+            )
