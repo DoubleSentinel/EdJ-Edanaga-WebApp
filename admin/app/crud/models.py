@@ -18,7 +18,6 @@ class HomeScreen(Document):
 
 
 class Invitations(Document):
-    language = StringField()
     token_url = StringField()
     active = BooleanField()
 

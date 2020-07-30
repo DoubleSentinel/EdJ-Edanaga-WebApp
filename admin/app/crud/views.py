@@ -192,15 +192,11 @@ class InvitationsView(UserAccessFactory('user'), ModelView):
     # can_delete = False
 
     column_list = [
-        "language",
         "token_url",
         "active",
     ]
 
     form_args = {
-        'language': {
-            'label': "Language of the home screen",
-        },
         'token_url': {
             'label': "Token",
         },
@@ -210,7 +206,5 @@ class InvitationsView(UserAccessFactory('user'), ModelView):
     }
 
     def on_model_change(self, form, model, is_created):
-        model.language = model.language.upper()
-
         if not model.token_url:
             model.token_url = str(model.id)
