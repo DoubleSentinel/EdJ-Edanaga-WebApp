@@ -7,6 +7,9 @@ MONGODB_SETTINGS = {
     'host': os.environ.get("MONGOHOST")
 }
 
+ADMINUSER = os.environ.get("ADMINUSER")
+ADMINPASS = os.environ.get("ADMINPASS")
+
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 SECURITY_PASSWORD_SALT = os.environ.get("SECURITY_PASSWORD_SALT")

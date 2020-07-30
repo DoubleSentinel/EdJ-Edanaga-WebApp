@@ -14,6 +14,8 @@ services:
             - MONGOHOST=${MONGOHOST}
             - SECRET_KEY=${ADMIN_SECRET_KEY}
             - SECURITY_PASSWORD_SALT=${ADMIN_SECURITY_SALT}
+            - ADMINUSER=${ADMINUSER}
+            - ADMINPASS=${ADMINPASS}
         depends_on:
             - db
     api:
