@@ -91,27 +91,3 @@ admin.add_link(
 )
 
 
-# defining test users for development mode
-if os.environ.get("FLASK_ENV", "") == "development":
-    with app.app_context():
-        try:
-            user_role = Role(name="user").save()
-            super_user_role = Role(name="superuser").save()
-        except mongoerrors.NotUniqueError:
-            user_role = Role.objects.get(name="user")
-            super_user_role = Role.objects.get(name="superuser")
-        try:
-            User.objects.get(email="admin")
-            print(
-                "Test user already exists, no need to create.\n email= admin password= admin"
-            )
-        except mongoerrors.DoesNotExist:
-            test_user = user_datastore.create_user(
-                email="admin",
-                password=encrypt_password("admin"),
-                roles=[user_role, super_user_role],
-            )
-            print("Test user created as: email= admin password= admin")
-        except mongoerrors.MultipleObjectsReturned:
-            User.objects(email="admin").first().delete()
-

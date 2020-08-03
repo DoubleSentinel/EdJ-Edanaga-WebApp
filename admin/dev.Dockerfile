@@ -11,6 +11,4 @@ EXPOSE 5000
 
 WORKDIR /opt/source-code
 
-ENV FLASK_ENV=development
-
-CMD flask run --host 0.0.0.0
+CMD FLASK_APP=migrations.py flask run && flask run --host 0.0.0.0
