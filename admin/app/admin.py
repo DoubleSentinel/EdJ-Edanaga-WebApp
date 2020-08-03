@@ -15,13 +15,15 @@ from flask_admin.menu import MenuLink
 from auth.models import User, Role
 from auth.views import SecuredHomeView, SuperUserView, SuperRoleView
 
-from crud.models import (UITranslations,
+from crud.models import (Languages,
+                         UITranslations,
                          UIElement,
                          Conversation,
                          Scene,
                          HomeScreen,
                          Invitations)
-from crud.views import (UITranslationsView,
+from crud.views import (LanguagesView,
+                        UITranslationsView,
                         ConversationView,
                         SceneView,
                         HomeScreenView,
@@ -73,6 +75,7 @@ admin.add_view(InvitationsView(Invitations, "Invitation links", category="Public
 # Add views to Flask Admin for superuser to handle authentication
 admin.add_view(SuperUserView(User, "Users", category="Administration"))
 admin.add_view(SuperRoleView(Role, "User roles", category="Administration"))
+admin.add_view(LanguagesView(Languages, "Project Languages", category="Administration"))
 
 admin.add_link(
     MenuLink(

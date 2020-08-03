@@ -11,8 +11,15 @@ from mongoengine.fields import (
 from mongoengine import Document, EmbeddedDocument, CASCADE, PULL
 
 
+class Languages(Document):
+    name = StringField()
+
+    def __unicode__(self):
+        return self.name
+
+
 class HomeScreen(Document):
-    language = StringField()
+    language = ReferenceField(Languages)
     welcome_title = StringField()
     welcome_text = StringField()
 
@@ -29,7 +36,7 @@ class UIElement(EmbeddedDocument):
 
 
 class UITranslations(Document):
-    language = StringField()
+    language = ReferenceField(Languages)
     scene = StringField()
     elements = ListField(EmbeddedDocumentField(UIElement))
 
@@ -47,8 +54,8 @@ class Conversation(EmbeddedDocument):
 
 
 class Scene(Document):
+    language = ReferenceField(Languages)
     unity_scene_name = StringField()
-    language = StringField()
     conversation = ListField(EmbeddedDocumentField(Conversation))
 
     def __unicode__(self):

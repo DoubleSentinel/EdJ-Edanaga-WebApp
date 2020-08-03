@@ -9,7 +9,8 @@ from flask_security.utils import encrypt_password
 
 from auth.models import User, Role
 
-from crud.models import (UITranslations,
+from crud.models import (Languages,
+                         UITranslations,
                          UIElement,
                          Conversation,
                          Scene,
@@ -48,9 +49,14 @@ with app.app_context():
         User.objects(email=app.config["ADMINUSER"]).first().delete()
 
     # Migrations
-    ## HomeScreens
     try:
-        HomeScreen(language="EN",
+    ## Languages
+        english = Languages(name="EN").save()
+        french = Languages(name="FR").save()
+        german = Languages(name="DE").save()
+        italian = Languages(name="IT").save()
+    ## HomeScreens
+        HomeScreen(language=english,
                    welcome_title="Welcome to Edanaga.ch",
                    welcome_text="""Home of the Eawag project meant to collect 
                    population consensus on water treatement solutions in
@@ -58,28 +64,29 @@ with app.app_context():
                    in the testing environment, you should have been given a
                    specific link to access the test.""").save()
 
-        HomeScreen(language="FR",
+        HomeScreen(language=french,
                    welcome_title="Bienvenue sur Edanaga.ch",
                    welcome_text="""Accueil du projet Eawag destiné à collecter
                     un consensus de la population sur les solutions de traitement
                     des eaux usagé en zones rurales de la Suisse. Si vous souhaitez
                     participer dans l'environnement de test, vous devriez avoir reçu
                     un lien spécifique pour accéder au test.""").save()
-        HomeScreen(language="DE",
+        HomeScreen(language=german,
                    welcome_title="Willkommen bei Edanaga.ch",
                    welcome_text="""Heimat des Eawag-Projekts zum Sammeln
                     Bevölkerungskonsens über Wasseraufbereitungslösungen in
                     ländliche Gebiete der Schweiz. Wenn Sie teilnehmen möchten
                     In der Testumgebung sollten Sie eine erhalten haben
                     spezifischer Link, um auf den Test zuzugreifen.""").save()
-        HomeScreen(language="IT",
+        HomeScreen(language=italian,
                    welcome_title="Benvenuti su Edanaga.ch",
                    welcome_text="""Sede del progetto Eawag destinato a raccogliere
                     consenso della popolazione sulle soluzioni di trattamento delle acque nel 2005
                     zone rurali della Svizzera. Se vuoi partecipare
                     nell'ambiente di test, avresti dovuto ricevere un
                     link specifico per accedere al test..""").save()
-        exit(0)
     except Exception as e:
         print(str(e))
         exit(1)
+
+    exit(0)

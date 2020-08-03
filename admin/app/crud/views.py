@@ -88,6 +88,10 @@ class ConversationView(EmbeddedForm):
 
 
 # Model views for Flask-Admin
+class LanguagesView(UserAccessFactory('superuser'), ModelView):
+    pass
+
+
 class UITranslationsView(UserAccessFactory('user'), ModelView):
     # can_create = False
     # can_delete = False
