@@ -20,26 +20,24 @@ db = MongoEngine(app)
 def home(language):
     try:
         content = HomeScreen.objects.get(language=Languages.objects.get(name=language.upper()))
+        language_redirects = {language.name: url_for('.home', language=language.name) for language in Languages.objects()}
 
         return render_template(
             "home.html",
             welcome_title=content.welcome_title,
             welcome_text=content.welcome_text,
-            english_link=url_for('.home', language="en"),
-            french_link=url_for('.home', language="fr"),
-            german_link=url_for('.home', language="de"),
-            italian_link=url_for('.home', language="it"),
+            language_redirects=language_redirects,
         )
     except mongoerrors.DoesNotExist:
+        token = language
+        language_redirects = {language.name: url_for('.unity', language=language.name, token=token)
+                              for language in Languages.objects()}
         return render_template(
             "home.html",
             error=f"""The requested language translation of the website isn't available. 
             If you were trying to access a test room make sure you select a language
             in the top right of the page.""",
-            english_link=url_for('.unity', language="en", token=language),
-            french_link=url_for('.unity', language="fr", token=language),
-            german_link=url_for('.unity', language="de", token=language),
-            italian_link=url_for('.unity', language="it", token=language),
+            language_redirects=language_redirects,
         )
 
 

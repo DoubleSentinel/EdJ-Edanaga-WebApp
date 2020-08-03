@@ -41,10 +41,9 @@
                         Languages
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="{{ english_link }}">English</a>
-                        <a class="dropdown-item" href="{{ french_link }}">Français</a>
-                        <a class="dropdown-item" href="{{ german_link }}">Deutsch</a>
-                        <a class="dropdown-item" href="{{ italian_link }}">Italiano</a>
+                        {% for name,url in language_redirects.items() %}
+                        <a class="dropdown-item" href="{{ url }}">{{ name }}</a>
+                        {% endfor %}
                     </div>
                 </li>
             </ul>
