@@ -4,7 +4,7 @@ from flask import Flask, render_template, redirect, url_for, abort, request, sen
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
 
-from models import Invitations, HomeScreen
+from models import Languages, Invitations, HomeScreen
 
 app = Flask(__name__)
 
@@ -19,7 +19,7 @@ db = MongoEngine(app)
 @app.route("/", defaults={'language': 'en'})
 def home(language):
     try:
-        content = HomeScreen.objects.get(language=language.upper())
+        content = HomeScreen.objects.get(language=Languages.objects.get(name=language.upper()))
 
         return render_template(
             "home.html",
