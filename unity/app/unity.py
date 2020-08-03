@@ -24,12 +24,22 @@ def home(language):
         return render_template(
             "home.html",
             welcome_title=content.welcome_title,
-            welcome_text=content.welcome_text
+            welcome_text=content.welcome_text,
+            english_link=url_for('.home', language="en"),
+            french_link=url_for('.home', language="fr"),
+            german_link=url_for('.home', language="de"),
+            italian_link=url_for('.home', language="it"),
         )
     except mongoerrors.DoesNotExist:
         return render_template(
             "home.html",
-            error="The requested language translation of the website isn't available."
+            error=f"""The requested language translation of the website isn't available. 
+            If you were trying to access a test room make sure you select a language
+            in the top right of the page.""",
+            english_link=url_for('.unity', language="en", token=language),
+            french_link=url_for('.unity', language="fr", token=language),
+            german_link=url_for('.unity', language="de", token=language),
+            italian_link=url_for('.unity', language="it", token=language),
         )
 
 

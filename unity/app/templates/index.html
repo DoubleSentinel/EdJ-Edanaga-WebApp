@@ -1,116 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-      <!-- CSS for footer -->
-	    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- CSS for footer -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
 
-      <!-- Favicon imports-->
-      <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='media/images/index/favicon.ico') }}"> -->
-      <!-- <link rel="icon" href="{{ url_for('static', filename='media/images/index/favicon.ico') }}"> -->
+    <!-- Favicon imports-->
+    <!-- <link rel="shortcut icon" href="{{ url_for('static', filename='media/images/index/favicon.ico') }}"> -->
+    <!-- <link rel="icon" href="{{ url_for('static', filename='media/images/index/favicon.ico') }}"> -->
 
-      <!-- Custom CSS import -->
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom_css.css') }}">
+    <!-- Custom CSS import -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='custom_css.css') }}">
 
-      <title>
+    <title>
         {% block window_title %}
         {% endblock %}
-      </title>
-  </head>
+    </title>
+</head>
 
-  <body>
-  <header>
-  </header>
+<body>
 
-  <main>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Edanaga</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Languages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="{{ english_link }}">English</a>
+                        <a class="dropdown-item" href="{{ french_link }}">Français</a>
+                        <a class="dropdown-item" href="{{ german_link }}">Deutsch</a>
+                        <a class="dropdown-item" href="{{ italian_link }}">Italiano</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main>
     <!-- Page Content -->
     {% block content %}
     <!-- content from other template-->
     {% endblock %}
-  </main>
+</main>
 
 <!-- Footer -->
-  <footer class="pt-5 pb-4 navbar fixed-bottom" id="contact">
-	  <div class="container">
-		  <div class="row">
-			  <div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
-				  <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
-				  <p class="mb-4">Etiam laoreet in ex quis efficitur.</p>
-				  <ul class="f-address">
-					  <li>
-						  <div class="row">
-							  <div class="col-1"><i class="fas fa-map-marker"></i></div>
-							  <div class="col-10">
-								  <h6 class="font-weight-bold mb-0">Address:</h6>
-								  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							  </div>
-						  </div>
-					  </li>
-					  <li>
-						  <div class="row">
-							  <div class="col-1"><i class="far fa-envelope"></i></div>
-							  <div class="col-10">
-								  <h6 class="font-weight-bold mb-0">Have any questions?</h6>
-								  <p><a href="#">Support@userthemes.com</a></p>
-							  </div>
-						  </div>
-					  </li>
-					  <li>
-						  <div class="row">
-							  <div class="col-1"><i class="fas fa-phone-volume"></i></div>
-							  <div class="col-10">
-								  <h6 class="font-weight-bold mb-0">Address:</h6>
-								  <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
-							  </div>
-						  </div>
-					  </li>
-				  </ul>
-			  </div>
-			  <div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
-					<h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
-					<div class="input-group">
-						<input type="text" class="form-control" placeholder="Your Email Address">
-						<span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
-					</div>
-					<ul class="social-pet mt-4">
-						<li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
-						<li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
-						<li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
-					</ul>
-				</div>
-		  </div>
-	  </div>
-	  <!-- Copyright -->
-	  <section class="copyright navbar fixed-bottom">
-		  <div class="container">
-			  <div class="row">
-				  <div class="col-md-12 ">
-					  <div class="text-center text-white">
-						  &copy; 2018 Your Company. All Rights Reserved.
-					  </div>
-				  </div>
-			  </div>
-		  </div>
-	  </section>
-  </footer>
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
-    <!-- Custom JS imports come here -->
-  </body>
+<footer class="pt-5 pb-4 navbar bottom" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">ABOUT US</h5>
+                <p class="mb-4">Etiam laoreet in ex quis efficitur.</p>
+                <ul class="f-address">
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-map-marker"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Address:</h6>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="far fa-envelope"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Have any questions?</h6>
+                                <p><a href="#">Support@userthemes.com</a></p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row">
+                            <div class="col-1"><i class="fas fa-phone-volume"></i></div>
+                            <div class="col-10">
+                                <h6 class="font-weight-bold mb-0">Address:</h6>
+                                <p><a href="#">+XX (0) XX XX-XXXX-XXXX</a></p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 mt-2 mb-4">
+                <h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Your Email Address">
+                    <span class="input-group-addon" id="basic-addon2"><i class="fas fa-check"></i></span>
+                </div>
+                <ul class="social-pet mt-4">
+                    <li><a href="#" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#" title="twitter"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+                    <li><a href="#" title="instagram"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <section class="copyright navbar bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 ">
+                    <div class="text-center text-white">
+                        &copy; 2018 Your Company. All Rights Reserved.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+<!-- Custom JS imports come here -->
+</body>
 </html>
