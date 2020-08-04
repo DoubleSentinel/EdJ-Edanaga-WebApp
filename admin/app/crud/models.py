@@ -60,3 +60,9 @@ class Scene(Document):
 
     def __unicode__(self):
         return f"{self.unity_scene_name}_{self.language.name.upper()}"
+
+
+class TestUser(Document):
+    language_preference = ReferenceField(Languages)
+    username = StringField(required=True, unique=True)
+    userpass = StringField(required=True)
