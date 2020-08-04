@@ -7,7 +7,6 @@ from mongoengine import errors as mongoerrors
 from flask_wtf.csrf import CSRFProtect
 
 from flask_security import Security, MongoEngineUserDatastore
-from flask_security.utils import encrypt_password
 
 from flask_admin import Admin, helpers
 from flask_admin.menu import MenuLink

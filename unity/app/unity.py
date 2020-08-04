@@ -16,11 +16,12 @@ db = MongoEngine(app)
 
 
 @app.route("/<language>/")
-@app.route("/", defaults={'language': 'en'})
+@app.route("/", defaults={'language': 'EN'})
 def home(language):
     try:
         content = HomeScreen.objects.get(language=Languages.objects.get(name=language.upper()))
-        language_redirects = {language.name: url_for('.home', language=language.name) for language in Languages.objects()}
+        language_redirects = {language.name: url_for('.home', language=language.name)
+                              for language in Languages.objects()}
 
         return render_template(
             "home.html",

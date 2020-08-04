@@ -12,14 +12,14 @@ from mongoengine import Document, EmbeddedDocument, CASCADE, PULL
 
 
 class Languages(Document):
-    name = StringField()
+    name = StringField(unique=True)
 
     def __unicode__(self):
         return self.name
 
 
 class HomeScreen(Document):
-    language = ReferenceField(Languages)
+    language = ReferenceField(Languages, unique=True)
     welcome_title = StringField()
     welcome_text = StringField()
 
@@ -41,7 +41,7 @@ class UITranslations(Document):
     elements = ListField(EmbeddedDocumentField(UIElement))
 
     def __unicode__(self):
-        return f"{self.scene}_{self.language.upper()}"
+        return f"{self.scene}_{self.language.name.upper()}"
 
 
 class Conversation(EmbeddedDocument):
@@ -59,4 +59,4 @@ class Scene(Document):
     conversation = ListField(EmbeddedDocumentField(Conversation))
 
     def __unicode__(self):
-        return f"{self.unity_scene_name}_{self.language.upper()}"
+        return f"{self.unity_scene_name}_{self.language.name.upper()}"

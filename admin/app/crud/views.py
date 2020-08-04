@@ -187,9 +187,6 @@ class HomeScreenView(UserAccessFactory('superuser'), ModelView):
         },
     }
 
-    def on_model_change(self, form, model, is_created):
-        model.language = model.language.upper()
-
 
 class InvitationsView(UserAccessFactory('user'), ModelView):
     # can_create = False
