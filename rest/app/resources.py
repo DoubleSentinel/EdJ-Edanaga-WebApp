@@ -1,4 +1,4 @@
-from models import Languages, UITranslations, UIElement, Conversation, Scene
+from models import Languages, UITranslations, UIElement, Conversation, Scene, TestUser
 
 from flask_mongorest.resources import Resource
 from flask_mongorest import operators
@@ -43,4 +43,20 @@ class UITranslationsResource(Resource):
     filters = {
         'language': [operators.Exact],
         'scene': [operators.Exact]
+    }
+
+
+class TestUserResource(Resource):
+    document = TestUser
+    related_resources = {
+        'language': LanguagesResource,
+    }
+
+
+class IsUserResource(Resource):
+    document = TestUser
+    fields = ['id', 'username']
+
+    filters = {
+        'username': [operators.Exact]
     }
