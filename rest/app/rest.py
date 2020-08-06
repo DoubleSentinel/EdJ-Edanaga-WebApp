@@ -6,7 +6,7 @@ from mongoengine import errors as mongoerrors
 from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
-from resources import SceneResource, UITranslationsResource, TestUserResource, IsUserResource
+from resources import LanguagesResource, SceneResource, UITranslationsResource, TestUserResource, IsUserResource
 
 app = Flask(__name__)
 
@@ -18,6 +18,12 @@ db = MongoEngine(app)
 
 # Flask MongoRest init
 api = MongoRest(app)
+
+
+@api.register(name='languages', url='/languages/')
+class LanguageView(ResourceView):
+    resource = LanguagesResource
+    methods = [methods.List]
 
 
 @api.register(name='scenes', url='/scenes/')
@@ -32,7 +38,7 @@ class UITranslationsView(ResourceView):
     methods = [methods.Fetch, methods.List]
 
 
-@api.register(name='user', url='/testing_user/')
+@api.register(name='crud_user', url='/create_auth_user/')
 class TestUserView(ResourceView):
     resource = TestUserResource
     methods = [methods.Create, methods.Fetch]

@@ -63,6 +63,6 @@ class Scene(Document):
 
 
 class TestUser(Document):
-    language_preference = ReferenceField(Languages)
+    language_preference = StringField()
     username = StringField(required=True, unique=True)
     userpass = StringField(required=True)
