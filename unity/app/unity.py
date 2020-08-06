@@ -53,7 +53,10 @@ def unity(language, token):
             else:
                 raise mongoerrors.DoesNotExist
         except mongoerrors.DoesNotExist:
+            language_redirects = {language.name: url_for('.home', language=language.name)
+                                  for language in Languages.objects()}
             return render_template(
                 "home.html",
-                error="It seems your invitation link is either expired, inactive, or erroneous."
+                error="It seems your invitation link is either expired, inactive, or erroneous.",
+                language_redirects=language_redirects,
             )
