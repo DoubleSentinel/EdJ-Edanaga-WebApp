@@ -118,7 +118,7 @@ with app.app_context():
                            UIElement(gameobject_id="btnCancel",
                                      description="Account creation cancel button",
                                      text_value="Cancel"),
-                       ])
+                       ]).save()
         UITranslations(language=french,
                        scene="TitleScreen",
                        elements=[
@@ -149,7 +149,7 @@ with app.app_context():
                            UIElement(gameobject_id="btnCancel",
                                      description="Account creation cancel button",
                                      text_value="Annuler"),
-                       ])
+                       ]).save()
         UITranslations(language=german,
                        scene="TitleScreen",
                        elements=[
@@ -180,7 +180,7 @@ with app.app_context():
                            UIElement(gameobject_id="btnCancel",
                                      description="Account creation cancel button",
                                      text_value="Cancel"),
-                       ])
+                       ]).save()
         UITranslations(language=italian,
                        scene="TitleScreen",
                        elements=[
@@ -211,7 +211,7 @@ with app.app_context():
                            UIElement(gameobject_id="btnCancel",
                                      description="Account creation cancel button",
                                      text_value="Cancel"),
-                       ])
+                       ]).save()
     except Exception as e:
         print(str(e))
         exit(1)
