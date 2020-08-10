@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request, jsonify
 
 from flask_mongoengine import MongoEngine
 from mongoengine import errors as mongoerrors
@@ -6,7 +6,13 @@ from mongoengine import errors as mongoerrors
 from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
-from resources import LanguagesResource, SceneResource, UITranslationsResource, TestUserResource, IsUserResource
+from models import TestUser
+
+from resources import (LanguagesResource,
+                       SceneResource,
+                       UITranslationsResource,
+                       TestUserResource,
+                       IsUserResource)
 
 app = Flask(__name__)
 
@@ -38,13 +44,27 @@ class UITranslationsView(ResourceView):
     methods = [methods.Fetch, methods.List]
 
 
-@api.register(name='crud_user', url='/create_auth_user/')
+@api.register(name='crud_user', url='/crud_user/')
 class TestUserView(ResourceView):
     resource = TestUserResource
-    methods = [methods.Create, methods.Fetch]
+    methods = [methods.Create, methods.Update]
 
 
 @api.register(name='isuser', url='/is_user/')
 class IsUserView(ResourceView):
     resource = IsUserResource
     methods = [methods.List]
+
+
+@app.route("/login_user/", methods=['POST'])
+def login():
+    try:
+        if TestUser.objects.get(username=request.json["username"]).userpass == request.json["userpass"]:
+            return jsonify(error={"code": 200, "message": "ok"})
+        else:
+            return jsonify(error={"code": 400, "message": "wrong password"})
+    except KeyError:
+        return jsonify(error={"code": 400, "message": "Bad request"})
+    except mongoerrors.DoesNotExist:
+        return jsonify(error={"code": 400, "message": "Username does not exist"})
+
