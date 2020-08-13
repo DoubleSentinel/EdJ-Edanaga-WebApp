@@ -11,7 +11,7 @@ window.onload=replace_TextAreas;
 function replace_TextAreas(){
     textareas = [...document.getElementsByClassName('markdownEditor')];
 
-    Array.prototype.forEach.call(textareas, function(textarea) {
+    textareas.forEach((textarea) => {
       new SimpleMDE({
                 element: textarea,
                 autoDownloadFontAwesome: true,
