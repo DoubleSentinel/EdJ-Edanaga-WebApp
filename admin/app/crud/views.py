@@ -94,7 +94,7 @@ class LanguagesView(UserAccessFactory('superuser'), ModelView):
 
 class UITranslationsView(UserAccessFactory('user'), ModelView):
     # can_create = False
-    # can_delete = False
+    can_delete = False
 
     column_list = [
         "language",
@@ -106,10 +106,6 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
     # create_template = 'admin/create/project.html'
     # edit_template = 'admin/edit/project.html'
 
-    # form_overrides = {
-    #     'description': SimpleMDETextAreaField
-    # }
-
     form_args = {
         'language': {
             'label': "UI Language",
@@ -118,10 +114,19 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
             'label': "Scene for this specific group of UI elements",
         },
         'elements': {
-            'label': "List of elements present in the scene",
+            'label': "UI Element in the scene",
         },
     }
+    form_subdocuments = {
+        'elements': {
+            'form_subdocuments': {
+                None: {
+                    'form_columns': ('description','text_value')
+                }
+            }
 
+        }
+    }
     column_labels = {
         'language': "Language of the UI",
         'scene': "Scene for this specific group of UI elements",
@@ -133,7 +138,7 @@ class SceneView(UserAccessFactory('user'), ModelView):
     # can_delete = False
 
     column_list = [
-        "unity_scene_name",
+        "conversation_title",
         "language",
     ]
 
@@ -144,25 +149,25 @@ class SceneView(UserAccessFactory('user'), ModelView):
                 '/static/custom.JS']
 
     form_args = {
-        'unity_scene_name': {
-            'label': "Target Unity Scene",
+        'conversation_title': {
+            'label': "Title of the conversation",
         },
         'language': {
             'label': "Language version",
         },
-        'conversation': {
+        'conversation_content': {
             'label': "Conversation",
         },
     }
     form_subdocuments = {
-        'conversation': {
+        'conversation_content': {
             'form_subdocuments': {
                 None: ConversationView(),
             }
         }
     }
     column_labels = {
-        'unity_scene_name': "Target Unity Scene",
+        'conversation_title': "Title of the conversation",
         'language': "Language",
     }
 

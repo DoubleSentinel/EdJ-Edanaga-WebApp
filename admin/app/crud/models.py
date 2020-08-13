@@ -55,11 +55,11 @@ class Conversation(EmbeddedDocument):
 
 class Scene(Document):
     language = ReferenceField(Languages)
-    unity_scene_name = StringField()
-    conversation = ListField(EmbeddedDocumentField(Conversation))
+    conversation_title = StringField()
+    conversation_content = ListField(EmbeddedDocumentField(Conversation))
 
     def __unicode__(self):
-        return f"{self.unity_scene_name}_{self.language.name.upper()}"
+        return f"{self.conversation_title}_{self.language.name.upper()}"
 
 
 class TestUser(Document):
