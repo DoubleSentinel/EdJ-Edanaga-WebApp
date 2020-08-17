@@ -1,3 +1,4 @@
+import datetime
 from mongoengine.fields import (
     BooleanField,
     DateTimeField,
@@ -22,11 +23,6 @@ class HomeScreen(Document):
     language = ReferenceField(Languages, unique=True)
     welcome_title = StringField()
     welcome_text = StringField()
-
-
-class Invitations(Document):
-    token_url = StringField()
-    active = BooleanField()
 
 
 class UIElement(EmbeddedDocument):
@@ -66,3 +62,14 @@ class TestUser(Document):
     language_preference = StringField()
     username = StringField(required=True, unique=True)
     userpass = StringField(required=True)
+    last_login = DateTimeField(default=datetime.datetime.utcnow)
+
+    def __unicode__(self):
+        return f"{self.username}"
+
+
+class Invitations(Document):
+    token_url = StringField(unique=True)
+    active = BooleanField()
+    creation_date = DateTimeField(default=datetime.datetime.utcnow)
+    participants = ListField(ReferenceField(TestUser, reverse_delete_rule=CASCADE))

@@ -121,7 +121,7 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
         'elements': {
             'form_subdocuments': {
                 None: {
-                    'form_columns': ('description','text_value')
+                    'form_columns': ('description', 'text_value')
                 }
             }
 
@@ -214,3 +214,7 @@ class InvitationsView(UserAccessFactory('user'), ModelView):
     def on_model_change(self, form, model, is_created):
         if not model.token_url:
             model.token_url = str(model.id)
+
+    def on_model_delete(self, model):
+        for participant in model.participants:
+            participant.delete()
