@@ -121,7 +121,11 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
         'elements': {
             'form_subdocuments': {
                 None: {
-                    'form_columns': ('description', 'text_value')
+                    'form_widget_args': {
+                        'gameobject_id': {
+                            'disabled': True
+                        }
+                    }
                 }
             }
 
@@ -194,9 +198,6 @@ class HomeScreenView(UserAccessFactory('superuser'), ModelView):
 
 
 class InvitationsView(UserAccessFactory('user'), ModelView):
-    # can_create = False
-    # can_delete = False
-
     column_list = [
         "token_url",
         "active",
@@ -209,6 +210,12 @@ class InvitationsView(UserAccessFactory('user'), ModelView):
         'active': {
             'label': "Is the token active?",
         },
+    }
+
+    form_widget_args = {
+        'participants': {
+            'disabled': True
+        }
     }
 
     def on_model_change(self, form, model, is_created):
