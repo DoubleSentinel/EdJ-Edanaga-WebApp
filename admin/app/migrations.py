@@ -10,6 +10,9 @@ from flask_security.utils import encrypt_password
 from auth.models import User, Role
 
 from crud.models import (Languages,
+                         ObjectiveName,
+                         Objective,
+                         ConstantVariables,
                          UITranslations,
                          UIElement,
                          Conversation,
@@ -55,6 +58,91 @@ with app.app_context():
         french = Languages(name="FR").save()
         german = Languages(name="DE").save()
         italian = Languages(name="IT").save()
+    ## Objectives
+        objective0 = ObjectiveName(unity_name="objective0", name="pnitro").save()
+        objective1 = ObjectiveName(unity_name="objective1", name="micro").save()
+        objective2 = ObjectiveName(unity_name="objective2", name="recovp").save()
+        objective3 = ObjectiveName(unity_name="objective3", name="wat").save()
+        objective4 = ObjectiveName(unity_name="objective4", name="energ").save()
+        objective5 = ObjectiveName(unity_name="objective5", name="illn").save()
+        objective6 = ObjectiveName(unity_name="objective6", name="attrac").save()
+        objective7 = ObjectiveName(unity_name="objective7", name="timeuser").save()
+        objective8 = ObjectiveName(unity_name="objective8", name="cost").save()
+        objective9 = ObjectiveName(unity_name="objective9", name="flex").save()
+    ## Variable Sets
+        ConstantVariables(name="default",
+                          variable_set=[
+                              Objective(name=objective0,
+                                        description="High removal of nitrogen compounds",
+                                        unit="%",
+                                        worst=20,
+                                        best=90,
+                                        value_fun_shape="exponential",
+                                        global_weight=0.08662175168),
+                              Objective(name=objective1,
+                                        description="High removal of micropolluants",
+                                        unit="%",
+                                        worst=7,
+                                        best=90,
+                                        value_fun_shape="linear",
+                                        global_weight=0.01732435034),
+                              Objective(name=objective2,
+                                        description="High nutrient recovery for fertilizer",
+                                        unit="%",
+                                        worst=0,
+                                        best=81 + 1/3,
+                                        value_fun_shape="linear",
+                                        global_weight=0.06929740135),
+                              Objective(name=objective3,
+                                        description="Low use of water",
+                                        unit="l/p*day",
+                                        worst=26.6,
+                                        best=0,
+                                        value_fun_shape="linear",
+                                        global_weight=0.07795957652),
+                              Objective(name=objective4,
+                                        description="Low net energy consumption",
+                                        unit="kWh/p*year",
+                                        worst=279.7269231,
+                                        best=15,
+                                        value_fun_shape="linear",
+                                        global_weight=0.06929740135),
+                              Objective(name=objective5,
+                                        description="High health protection",
+                                        unit="times/year",
+                                        worst=5,
+                                        best=0,
+                                        value_fun_shape="linear",
+                                        global_weight=0.06063522618),
+                              Objective(name=objective6,
+                                        description="High attractiveness",
+                                        unit="points",
+                                        worst=3,
+                                        best=10,
+                                        value_fun_shape="linear",
+                                        global_weight=0.09624639076),
+                              Objective(name=objective7,
+                                        description="Low time demand for end-users",
+                                        unit="h/year",
+                                        worst=24.225,
+                                        best=0,
+                                        value_fun_shape="exponential",
+                                        global_weight=0.06737247353),
+                              Objective(name=objective8,
+                                        description="Low annual costs",
+                                        unit="CHF/p*year",
+                                        worst=636,
+                                        best=153,
+                                        value_fun_shape="exponential",
+                                        global_weight=0.09624639076),
+                              Objective(name=objective9,
+                                        description="High flexibility (intergenerational equity)",
+                                        unit="years",
+                                        worst=24.9,
+                                        best=5,
+                                        value_fun_shape="linear",
+                                        global_weight=0.03368623677),
+                          ]).save()
     ## HomeScreens
         HomeScreen(language=english,
                    welcome_title="Welcome to Edanaga.ch",

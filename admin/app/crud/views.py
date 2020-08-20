@@ -20,6 +20,7 @@ from .models import (
 from utility import UserAccessFactory
 
 
+
 # These classes serve as an override for the Flask-Admin TextArea views.
 # If the tag "markdownEditor" is present in the class of a TextArea tag in html,
 # it will be replaced by a Markdown Editor (SimpleMDE)
@@ -90,6 +91,29 @@ class ConversationView(EmbeddedForm):
 # Model views for Flask-Admin
 class LanguagesView(UserAccessFactory('superuser'), ModelView):
     pass
+
+
+class ObjectiveView(UserAccessFactory('superuser'), ModelView):
+    can_delete = False
+    can_create = False
+
+    form_widget_args = {
+        'unity_name': {
+            'disabled': True
+        }
+    }
+
+
+class ConstantVariablesView(UserAccessFactory('user'), ModelView):
+    form_args = {
+        'name': {
+            'label': "Name of variable set",
+        },
+        'variable_set': {
+            'label': "Set of variables",
+        },
+    }
+
 
 
 class UITranslationsView(UserAccessFactory('user'), ModelView):
@@ -217,10 +241,6 @@ class InvitationsView(UserAccessFactory('user'), ModelView):
             'disabled': True
         }
     }
-
-    def on_model_change(self, form, model, is_created):
-        if not model.token_url:
-            model.token_url = str(model.id)
 
     def on_model_delete(self, model):
         for participant in model.participants:

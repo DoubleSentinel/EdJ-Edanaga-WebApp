@@ -4,6 +4,7 @@ from mongoengine.fields import (
     DateTimeField,
     EmbeddedDocumentField,
     IntField,
+    FloatField,
     ListField,
     ReferenceField,
     StringField,
@@ -68,8 +69,35 @@ class TestUser(Document):
         return f"{self.username}"
 
 
+class ObjectiveName(Document):
+    unity_name = StringField(required=True)
+    name = StringField(required=True)
+
+    def __unicode__(self):
+        return self.name
+
+
+class Objective(EmbeddedDocument):
+    name = ReferenceField(ObjectiveName)
+    description = StringField()
+    unit = StringField(required=True)
+    worst = FloatField(required=True)
+    best = FloatField(required=True)
+    value_fun_shape = StringField(required=True)
+    global_weight = FloatField(required=True)
+
+
+class ConstantVariables(Document):
+    name = StringField()
+    variable_set = ListField(EmbeddedDocumentField(Objective))
+
+    def __unicode__(self):
+        return f"{self.name}"
+
+
 class Invitations(Document):
-    token_url = StringField(unique=True)
+    token_url = StringField(unique=True, required=True)
     active = BooleanField()
     creation_date = DateTimeField(default=datetime.datetime.utcnow)
     participants = ListField(ReferenceField(TestUser, reverse_delete_rule=CASCADE))
+    constant_variables = ReferenceField(ConstantVariables, default="default")

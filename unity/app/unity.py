@@ -42,7 +42,7 @@ def home(language):
         )
 
 
-@app.route("/<language>/<token>")
+@app.route("/<language>/<token>/")
 def unity(language, token):
     if not token:
         redirect(url_for('.home', language))

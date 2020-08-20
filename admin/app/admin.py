@@ -15,13 +15,17 @@ from auth.models import User, Role
 from auth.views import SecuredHomeView, SuperUserView, SuperRoleView
 
 from crud.models import (Languages,
+                         ObjectiveName,
                          UITranslations,
                          UIElement,
                          Conversation,
                          Scene,
                          HomeScreen,
+                         ConstantVariables,
                          Invitations)
 from crud.views import (LanguagesView,
+                        ObjectiveView,
+                        ConstantVariablesView,
                         UITranslationsView,
                         ConversationView,
                         SceneView,
@@ -65,13 +69,16 @@ def security_context_processor():
     )
 
 
-# Add views to Flask Admin for CRUD handling of website data
+# Add views to Flask Admin
 admin.add_view(UITranslationsView(UITranslations, "UI Translations", category="Game Content"))
 admin.add_view(SceneView(Scene, "Scenes' Translations", category="Game Content"))
 admin.add_view(HomeScreenView(HomeScreen, "Home Screen Content", category="Public Website Content"))
 admin.add_view(InvitationsView(Invitations, "Invitation links", category="Public Website Content"))
+admin.add_view(ConstantVariablesView(ConstantVariables, "Variable Sets", category="Testing Configuration"))
+admin.add_view(ObjectiveView(ObjectiveName, "Objectives", category="Testing Configuration"))
 
-# Add views to Flask Admin for superuser to handle authentication
+
+# Add views to Flask Admin for superuser
 admin.add_view(SuperUserView(User, "Users", category="Administration"))
 admin.add_view(SuperRoleView(Role, "User roles", category="Administration"))
 admin.add_view(LanguagesView(Languages, "Project Languages", category="Administration"))
@@ -91,5 +98,3 @@ admin.add_link(
         url=app.config["SECURITY_LOGOUT_URL"]
     )
 )
-
-
