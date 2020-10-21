@@ -7,7 +7,7 @@ from mongoengine import errors as mongoerrors
 from flask_mongorest import MongoRest, methods
 from flask_mongorest.views import ResourceView
 
-from models import TestUser, Invitations
+from models import TestUser, Invitations, ObjectiveName
 
 from resources import (LanguagesResource,
                        SceneResource,
@@ -63,7 +63,16 @@ def login():
         user = TestUser.objects.get(username=request.json["username"])
         if user.userpass == request.json["userpass"]:
             user.last_login = datetime.datetime.utcnow()
-            return jsonify(error={"code": 200, "message": "ok"})
+            out = []
+            for variable in Invitations.objects.get(participants=user.id).constant_variables.variable_set:
+                out.append({"name": variable.name.unity_name,
+                            "description": variable.description,
+                            "unit": variable.unit,
+                            "worst": variable.worst,
+                            "best": variable.best,
+                            "global_weight": variable.global_weight,
+                            })
+            return jsonify(error={"code": 200, "message": "ok", "constants": out})
         else:
             return jsonify(error={"code": 400, "message": "wrong password"})
     except KeyError:
@@ -77,7 +86,7 @@ def update_invite():
     try:
         token = Invitations.objects.get(token_url=request.json["token_url"])
         token.update(add_to_set__participants=request.json["user_id"])
-        return jsonify(error={"code": 200, "message": "ok"})
+        return jsonify(error={"code": 200, "message": "ok", "id": token.id})
     except KeyError:
         return jsonify(error={"code": 400, "message": "Bad request"})
     except mongoerrors.DoesNotExist:

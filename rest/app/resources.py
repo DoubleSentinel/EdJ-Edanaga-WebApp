@@ -19,16 +19,12 @@ class UIElementResource(Resource):
 class SceneResource(Resource):
     document = Scene
     related_resources = {
-        'conversation': ConversationResource,
+        'conversation_content': ConversationResource,
         'language': LanguagesResource,
     }
 
     filters = {
-        'scene': [operators.Exact]
-    }
-
-    rename_fields = {
-        'unity_scene_name': 'scene'
+        'conversation_title': [operators.Exact]
     }
 
 
