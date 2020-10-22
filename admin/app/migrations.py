@@ -195,7 +195,7 @@ with app.app_context():
                         else:
                             snippets.append(Conversation(target_character=tgt,
                                                          position_in_conversation=pos,
-                                                         text=block))
+                                                         text=block.rstrip()))
                     Scene(language=languages[lang],
                           conversation_title=title,
                           conversation_content=snippets).save()
