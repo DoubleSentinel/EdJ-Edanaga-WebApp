@@ -205,7 +205,7 @@ with app.app_context():
 
     ### UITranslations
     header_scene = r"scene\([0-9a-zA-Z_.]+\)"
-    desc_tag = r"pos\([0-9]+\)"
+    desc_tag = r"desc\([0-9]+\)"
     in_parentheses = r'\((.*?)\)'
     for filename in os.listdir('./ui_migrations'):
         with open('./ui_migrations/' + filename) as file:
