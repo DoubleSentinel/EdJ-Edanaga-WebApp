@@ -57,7 +57,7 @@ with app.app_context():
     french = Languages(name="FR").save()
     german = Languages(name="DE").save()
     italian = Languages(name="IT").save()
-    languages = {english.name:english, french.name:french, german.name:german, italian.name:italian}
+    languages = {english.name: english, french.name: french, german.name: german, italian.name: italian}
     ## Objectives
     objective0 = ObjectiveName(unity_name="objective0", name="pnitro").save()
     objective1 = ObjectiveName(unity_name="objective1", name="micro").save()
@@ -175,16 +175,16 @@ with app.app_context():
     position_tag = r"pos\([0-9]+\)"
     in_parentheses = r'\((.*?)\)'
     for filename in os.listdir('./text_migrations'):
-        with open('./text_migrations/'+filename) as file:
+        with open('./text_migrations/' + filename) as file:
             lang = ""
             title = ""
             conversation_block = []
             for line in file:
                 if line in ["\n", "\r\n"]:
                     if re.match(header_title, conversation_block[0]):
-                        title = re.search(in_parentheses,conversation_block[0]).group(1)
+                        title = re.search(in_parentheses, conversation_block[0]).group(1)
                     if re.match(header_language, conversation_block[1]):
-                        lang = re.search(in_parentheses,conversation_block[1]).group(1)
+                        lang = re.search(in_parentheses, conversation_block[1]).group(1)
 
                     snippets = []
                     for block in conversation_block[2:]:
@@ -204,6 +204,37 @@ with app.app_context():
                     conversation_block.append(line)
 
     ### UITranslations
+    header_scene = r"scene\([0-9a-zA-Z_.]+\)"
+    desc_tag = r"pos\([0-9]+\)"
+    in_parentheses = r'\((.*?)\)'
+    for filename in os.listdir('./ui_migrations'):
+        with open('./ui_migrations/' + filename) as file:
+            lang = ""
+            scene = ""
+            ui_block = []
+            for line in file:
+                if line in ["\n", "\r\n"]:
+                    if re.match(header_scene, ui_block[0]):
+                        scene = re.search(in_parentheses, ui_block[0]).group(1)
+                    if re.match(header_language, ui_block[1]):
+                        lang = re.search(in_parentheses, ui_block[1]).group(1)
+
+                    ui_element = []
+                    for block in ui_block[2:]:
+                        if re.match(target_tag, block):
+                            tgt = re.search(in_parentheses, block).group(1)
+                        elif re.match(position_tag, block):
+                            pos = re.search(in_parentheses, block).group(1)
+                        else:
+                            ui_element.append(UIElement(gameobject_id=tgt,
+                                                        description=pos,
+                                                        text_value=block.rstrip()))
+                    UITranslations(language=languages[lang],
+                                   scene=scene,
+                                   elements=ui_element).save()
+                    ui_block = []
+                else:
+                    ui_block.append(line)
     #### TitleScreen
     UITranslations(language=english,
                    scene="TitleScreen",
