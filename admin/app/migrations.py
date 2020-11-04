@@ -223,11 +223,11 @@ with app.app_context():
                     for block in ui_block[2:]:
                         if re.match(target_tag, block):
                             tgt = re.search(in_parentheses, block).group(1)
-                        elif re.match(position_tag, block):
-                            pos = re.search(in_parentheses, block).group(1)
+                        elif re.match(desc_tag, block):
+                            desc = re.search(in_parentheses, block).group(1)
                         else:
                             ui_element.append(UIElement(gameobject_id=tgt,
-                                                        description=pos,
+                                                        description=desc,
                                                         text_value=block.rstrip()))
                     UITranslations(language=languages[lang],
                                    scene=scene,
