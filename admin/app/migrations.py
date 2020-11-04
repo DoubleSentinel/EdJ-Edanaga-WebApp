@@ -169,11 +169,15 @@ with app.app_context():
                             "accedere al test.").save()
     ## Unity
     ## Conversations
+    ### tag regexs
     header_title = r"title\([0-9a-zA-Z_.]+\)"
     header_language = r"language\([A-Z]{2}\)"
+    header_scene = r"scene\([0-9a-zA-Z_.]+\)"
+    desc_tag = r"desc\(\w+\)"
     target_tag = r"tgt\(\w+\)"
     position_tag = r"pos\([0-9]+\)"
     in_parentheses = r'\((.*?)\)'
+
     for filename in os.listdir('./text_migrations'):
         with open('./text_migrations/' + filename) as file:
             lang = ""
@@ -204,9 +208,6 @@ with app.app_context():
                     conversation_block.append(line)
 
     ### UITranslations
-    header_scene = r"scene\([0-9a-zA-Z_.]+\)"
-    desc_tag = r"desc\([0-9]+\)"
-    in_parentheses = r'\((.*?)\)'
     for filename in os.listdir('./ui_migrations'):
         with open('./ui_migrations/' + filename) as file:
             lang = ""

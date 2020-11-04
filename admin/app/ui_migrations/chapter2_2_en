@@ -1,5 +1,5 @@
 scene(Chapter2.2)
-language(FR)
+language(EN)
 tgt(lbl_Chap3_name)
 desc(lbl_Chap3_name)
 <b>Chapitre 3 : Débats et battles au « Bargain »</b>
@@ -15,3 +15,4 @@ Valider mon classement
 tgt(btn_Chap3_redo)
 desc(btn_Chap3_redo)
 Recommencer le chapitre
+
