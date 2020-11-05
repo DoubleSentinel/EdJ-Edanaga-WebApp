@@ -12,4 +12,4 @@ COPY ./app ./
 
 EXPOSE 5000
 
-CMD FLASK_APP=migrations.py flask run && uwsgi --http-socket :5000 --wsgi-file app.py
+CMD wsgi --http-socket :5000 --wsgi-file app.py

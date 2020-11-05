@@ -34,7 +34,7 @@ services:
     unity:
         build:
             context: ./unity
-            dockerfile: Dockerfile
+            dockerfile: production.Dockerfile
         restart: always
         depends_on:
             - db
