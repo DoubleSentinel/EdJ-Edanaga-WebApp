@@ -35,6 +35,13 @@ services:
         build:
             context: ./unity
             dockerfile: production.Dockerfile
+        volumes:
+                - "./admin/app/crud/models.py:/opt/source-code/models.py"
+        environment:
+            - MONGODB=${MONGODB}
+            - MONGOUSER=${MONGOUSER}
+            - MONGOPASS=${MONGOPASS}
+            - MONGOHOST=${MONGOHOST}
         restart: always
         depends_on:
             - db
