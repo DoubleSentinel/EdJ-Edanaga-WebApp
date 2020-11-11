@@ -86,7 +86,7 @@ def update_invite():
     try:
         token = Invitations.objects.get(token_url=request.json["token_url"])
         token.update(add_to_set__participants=request.json["user_id"])
-        return jsonify(error={"code": 200, "message": "ok", "id": token.id})
+        return jsonify(error={"code": 200, "message": "ok", "id": str(token.id)})
     except KeyError:
         return jsonify(error={"code": 400, "message": "Bad request"})
     except mongoerrors.DoesNotExist:
