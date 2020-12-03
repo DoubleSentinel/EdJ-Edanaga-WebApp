@@ -5,10 +5,13 @@ desc(lbl_Chap1_name)
 <b>Chapitre 1 : L’interview</b>
 tgt(lbl_Desc_Chap1_Title)
 desc(lbl_Desc_Chap1_Title)
-<b>Breaking News !</b>
+<b>Breaking News !</b> 
 tgt(lbl_Desc_Chap1_Text)
 desc(lbl_Desc_Chap1_Text)
 Un important problème sanitaire vient d’apparaitre dans le village voisin. Celui-ci est lié au traitement des eaux usées des ménages. Un journaliste demande à connaitre votre opinion sur ce sujet d’actualité brûlant. Vous n’y connaissez pas grand-chose, mais pressé·e par le temps, vous vous rendez à cet interview, accompagné·e par l’ingénieure de <i>NOM AM RIVIERE<i/> en charge de la gestion des infrastructures.
+tgt(tuto_Chap1_discovery) 
+desc(tuto_Chap1_discovery)
+Dans l’ordre donné, cliquez sur chaque alternative pour la découvrir plus en détails !
 tgt(lbl_Alternative0_Title0)
 desc(lbl_Alternative0_Title0)
 1) Réhabilitation de la STEP du village
@@ -35,19 +38,19 @@ desc(lbl_Alternative0_Desc_Title)
 <b>Présentation & fonctionnement</b>
 tgt(lbl_Alternative0_Desc_Text)
 desc(lbl_Alternative0_Desc_Text)
-Prolonger l’utilisation de notre STEP nécessite de la rénover, sans pour autant devoir changer de technologie. Les canalisations (1), qui transportent urines, selles et eaux ménagères, ainsi que le système d’égouts (2) de quelques km de long, sont également rénovés. Toutes les eaux usées sont encore traitées dans la STEP locale (3), en périphérie du village, puis les eaux traitées sont rejetées dans la rivière. Dans les zones rurales, les rénovations sont notamment prises en charge par les villages, car les subventions fédérales octroyées dans les années 60-90 pour inciter à construire des STEP ne sont pas renouvelées.
-tgt(lbl_Alternative0_Pros_Title)
+Prolonger l’utilisation de notre STEP nécessite de la rénover, sans pour autant devoir changer de technologie. Les canalisations (1), qui transportent urines, selles et eaux ménagères, ainsi que le système d’égouts (2) de quelques km de long, sont également rénovés. Toutes les eaux usées sont encore traitées dans la STEP locale (3), en périphérie du village, puis les eaux traitées sont rejetées dans la rivière. Dans les zones rurales, les rénovations sont notamment prises en charge par les villages, car les subventions fédérales octroyées dans les années 60-90 pour inciter à construire des STEP ne sont pas renouvelées. 
+tgt(lbl_Alternative0_Pros_Title) 
 desc(lbl_Alternative0_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative0_Pros_List)
 desc(lbl_Alternative0_Pros_List)
-<ul><li>Très haute élimination des composés azotés</li><li>Haute protection de la santé</li><li>Haute attractivité des toilettes</li><li>Faible demande de temps des usager-ères</li></ul>
+-<indent=15%>Très haute élimination des composés azotés</indent>-<indent=15%>Haute protection de la santé</indent>-<indent=15%>Haute attractivité des toilettes</indent>-<indent=15%>Faible demande de temps des usager-ères</indent>
 tgt(lbl_Alternative0_Cons_Title)
 desc(lbl_Alternative0_Cons_Title)
 <b>Inconvénients</b>
 tgt(lbl_Alternative0_Cons_List)
 desc(lbl_Alternative0_Cons_List)
-<ul><li>Très faible élimination des micropolluants</li><li>Très faible récupération du phosphore</li><li>Très haute consommation d’eau</li><li>Très haute consommation d’énergie</li><li>Hauts coûts annuels</li><li>Faibles flexibilité et équité intergénérationnelle</li></ul>
+-<indent=15%>Très faible élimination des micropolluants</indent>-<indent=15%>Très faible récupération du phosphore</indent>-<indent=15%>Très haute consommation d’eau</indent>-<indent=15%>Très haute consommation d’énergie</indent>-<indent=15%>Hauts coûts annuels</indent>-<indent=15%>Faibles flexibilité et équité intergénérationnelle</indent>
 tgt(lbl_Alternative1_Title1)
 desc(lbl_Alternative1_Title1)
 <b>Raccordement et mutualisation de la STEP régionale</b>
@@ -62,13 +65,14 @@ desc(lbl_Alternative1_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative1_Pros_Text)
 desc(lbl_Alternative1_Pros_Text)
-<ul><li>Haute élimination des composés azotés</li><li>Haute élimination des micropolluants</li><li>Faible consommation d’énergie</li><li>Haute protection de la santé</li><li>Haute attractivité des toilettes</li><li>Faible demande de temps des usager-ères</li></ul>
+-<indent=15%>Haute élimination des composés azotés</indent>-<indent=15%>Haute élimination des micropolluants</indent>-<indent=15%>Faible consommation d’énergie</indent>-<indent=15%>Haute protection de la santé</indent>-<indent=15%>Haute attractivité des toilettes</indent>-<indent=15%>Faible demande de temps des usager-ères</indent>
 tgt(lbl_Alternative1_Cons_Title)
 desc(lbl_Alternative1_Cons_Title)
 <b>Inconvénients</b>
 tgt(lbl_Alternative1_Cons_List)
-desc(lbl_Alternative1_Pros_List)
-<ul><li>Très faible récupération du phosphore</li><li>Haute consommation d’eau</li></ul>
+desc(lbl_Alternative1_Cons_List)
+-<indent=15%>Très faible récupération du phosphore</indent>
+-<indent=15%>Haute consommation d’eau</indent>
 tgt(lbl_Alternative2_Title1)
 desc(lbl_Alternative2_Title1)
 <b>Micro-stations décentralisées</b>
@@ -78,18 +82,18 @@ desc(lbl_Alternative2_Desc_Title )
 tgt(lbl_Alternative2_Desc_Text)
 desc(lbl_Alternative2_Desc_Text)
 En partie gérées par les habitant·e·s, ces petites stations d’épuration permettent un traitement des eaux usées de ménages individuels ou de petits groupes de ménages. Les urines et les selles sont collectées par des toilettes traditionnelles et rejoignent les eaux ménagères pour traitement dans une micro-station utilisant des processus naturels ou techniques. Avec les processus naturels, les eaux usées stockées dans une cuve (1) sont traitées par un écosystème de micro-organismes sur un terrain planté de roseaux (2). Avec les processus techniques, on traite les eaux usées dans des cuves (3) dans les caves ou sous terre dans les jardins. Les eaux traitées par l’un ou l’autre processus sont infiltrées dans le sol des jardins (4) ou déchargées dans des rivières (5). Les déchets solides résiduels, appelés boues, sont transportées par camion dans une grande STEP (6) pour être traitées.
-Tgt(lbl_Alternative2_Pros_Title)
+tgt(lbl_Alternative2_Pros_Title)
 desc(lbl_Alternative2_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative2_Pros_List)
-desc(lbl_Alternative0_Pros_List)
-<ul><li>Haute élimination des composés azotés</li><li>Très faible consommation d’énergie</li><li>Hautes flexibilité et équité intergénérationnelle</li></ul>
+desc(lbl_Alternative2_Pros_List)
+-<indent=15%>Haute élimination des composés azotés</indent>-<indent=15%>Très faible consommation d’énergie</indent>-<indent=15%>Hautes flexibilité et équité intergénérationnelle</indent>
 tgt(lbl_Alternative2_Cons_Title)
 desc(lbl_Alternative2_Cons_Title)
 <b>Inconvénients</b>
 tgt(lbl_Alternative2_Cons_List)
 desc(lbl_Alternative2_Cons_List)
-<ul><li>Très faible élimination des micropolluants</li><li>Très faible récupération du phosphore</li><li>Très haute consommation d’eau</li></ul>
+-<indent=15%>Très faible élimination des micropolluants</indent>-<indent=15%>Très faible récupération du phosphore</indent>-<indent=15%>Très haute consommation d’eau</indent>
 tgt(lbl_Alternative3_Title1)
 desc(lbl_Alternative3_Title1)
 <b>Micro-stations décentralisées, séparation des urines</b>
@@ -104,13 +108,13 @@ desc(lbl_Alternative3_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative3_Pros_List)
 desc(lbl_Alternative3_Pros_List)
-<ul><li>Haute élimination des composés azotés</li><li>Hautes flexibilité et équité intergénérationnelle</li></ul>
+-<indent=15%>Haute élimination des composés azotés</indent>-<indent=15%>Hautes flexibilité et équité intergénérationnelle</indent>
 tgt(lbl_Alternative3_Cons_Title)
 desc(lbl_Alternative3_Cons_Title)
 <b>Inconvénients</b>
 tgt(lbl_Alternative3_Cons_List)
 desc(lbl_Alternative3_Cons_List)
-<ul><li>Haute consommation d’eau</li><li>Faible protection de la santé</li><li>Haute demande de temps des usager-ères</li><li>Hauts coûts annuels</li></ul>
+-<indent=15%>Haute consommation d’eau</indent>-<indent=15%>Faible protection de la santé</indent>-<indent=15%>Haute demande de temps des usager-ères</indent>-<indent=15%>Hauts coûts annuels</indent>
 tgt(lbl_Alternative4_Title1)
 desc(lbl_Alternative4_Title1)
 <b>Micro-stations décentralisées, séparation des urines et des selles</b>
@@ -125,18 +129,18 @@ desc(lbl_Alternative4_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative4_Pros_List)
 desc(lbl_Alternative4_Pros_List)
-<ul><li>Haute élimination des composés azotés</li><li>Haute récupération du phosphore</li><li>Faible consommation d’eau</li><li>Faible consommation d’énergie</li><li>Hautes flexibilité et équité intergénérationnelle</li></ul>
+-<indent=15%>Haute élimination des composés azotés</indent>-<indent=15%>Haute récupération du phosphore</indent>-<indent=15%>Faible consommation d’eau</indent>-<indent=15%>Faible consommation d’énergie</indent>-<indent=15%>Hautes flexibilité et équité intergénérationnelle</indent>
 tgt(lbl_Alternative4_Cons_Title)
 desc(lbl_Alternative4_Cons_Title)
 <b>Inconvénients</b>
-tgt(lbl_Alternative4_Pros_List)
-desc(lbl_Alternative4_Pros_List)
-<ul><li>Très faible protection de la santé</li><li>Très faible attractivité des toilettes</li><li>Très haute demande de temps des usager-ères</li><li>Hauts coûts annuels</li></ul>
+tgt(lbl_Alternative4_Cons_List)
+desc(lbl_Alternative4_Cons_List)
+-<indent=15%>Très faible protection de la santé</indent>-<indent=15%>Très faible attractivité des toilettes</indent>-<indent=15%>Très haute demande de temps des usager-ères</indent>-<indent=15%>Hauts coûts annuels</indent>
 tgt(lbl_Alternative5_Title1)
 desc(lbl_Alternative5_Title1)
 <b>Nouvelle STEP du village et séparation des urines</b>
 tgt(lbl_Alternative5_Desc_Title)
-desc(lbl_Alternative5_Desc_Title )
+desc(lbl_Alternative5_Desc_Title)
 <b>Présentation & fonctionnement</b>
 tgt(lbl_Alternative5_Desc_Text)
 desc(lbl_Alternative5_Desc_Text)
@@ -146,14 +150,17 @@ desc(lbl_Alternative5_Pros_Title)
 <b>Avantages</b>
 tgt(lbl_Alternative5_Pros_List)
 desc(lbl_Alternative5_Pros_List)
-<ul><li>Haute élimination des composés azotés</li><li>Haute protection de la santé</li><li>Faible demande de temps des usager-ères</li></ul>
+-<indent=15%>Haute élimination des composés azotés</indent>-<indent=15%>Haute protection de la santé</indent>-<indent=15%>Faible demande de temps des usager-ères</indent>
 tgt(lbl_Alternative5_Cons_Title)
-desc(lbl_Alternative5_Pros_Title)
+desc(lbl_Alternative5_Cons_Title)
 <b>Inconvénients</b>
 tgt(lbl_Alternative5_Cons_List)
-desc(lbl_Alternative5_Pros_List)
-<ul><li>Haute consommation d’eau</li><li>Très haute consommation d’énergie</li><li>Très hauts coûts annuels</li><li>Très faibles flexibilité et équité intergénérationnelles</li></ul>
+desc(lbl_Alternative5_Cons_List)
+-<indent=15%>Haute consommation d’eau</indent>-<indent=15%>Très haute consommation d’énergie</indent>-<indent=15%>Très hauts coûts annuels</indent>-<indent=15%>Très faibles flexibilité et équité intergénérationnelles</indent>
 tgt(lbl_Alternatives_DragNDrop_text)
 desc(lbl_Alternatives_DragNDrop_text)
-Vous venez de découvrir plusieurs possibilités pour remplacer le système actuel de traitement des eaux usées. Maintenant, veuillez classer ces alternatives, de votre préférée à celle que vous souhaitez le moins implémenter. Rappelons-nous du cadre spécifique dans lequel nous sommes, soit celui d’un village d’environ 2'000 habitant·e·s. Il n’y a pas de bonne ou mauvaise réponse, seule votre opinion nous importe.
+Vous venez de découvrir plusieurs possibilités pour remplacer le système actuel de traitement des eaux usées. Maintenant, vous allez classer ces alternatives, de votre préférée à celle que vous souhaitez le moins implémenter. Rappelons-nous du cadre spécifique dans lequel nous sommes, soit celui d’un village d’environ 2'000 habitant·e·s. Il n’y a pas de bonne ou mauvaise réponse, seule votre opinion nous importe.
+tgt(tuto_Chap1_dragndrop) 
+desc(tuto_Chap1_dragndrop)
+Cliquez sur l’alternative que vous préférez, maintenez le bouton de la souris pressé et déplacez l’image en haut du classement, avant de relâcher le bouton de la souris. De la même manière, glissez-déposez votre deuxième alternative préférée à la seconde place, et ainsi de suite jusqu’à obtenir le classement de votre choix !
 

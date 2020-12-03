@@ -99,5 +99,7 @@ class Invitations(Document):
     token_url = StringField(unique=True, required=True)
     active = BooleanField()
     creation_date = DateTimeField(default=datetime.datetime.utcnow)
+    # TODO: remove delete_rule and change Invitiation View handling when deleting a view
+    # to delete all participants as well
     participants = ListField(ReferenceField(TestUser, reverse_delete_rule=CASCADE))
     constant_variables = ReferenceField(ConstantVariables, default="default")

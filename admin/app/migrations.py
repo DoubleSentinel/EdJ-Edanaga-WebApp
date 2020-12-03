@@ -168,7 +168,6 @@ with app.app_context():
                             "partecipare nell'ambiente di test, avresti dovuto ricevere un link specifico per "
                             "accedere al test.").save()
     ## Unity
-    ## Conversations
     ### tag regexs
     header_title = r"title\([0-9a-zA-Z_.]+\)"
     header_language = r"language\([A-Z]{2}\)"
@@ -178,6 +177,7 @@ with app.app_context():
     position_tag = r"pos\([0-9]+\)"
     in_parentheses = r'\((.*?)\)'
 
+    ## Conversations
     for filename in os.listdir('./text_migrations'):
         with open('./text_migrations/' + filename) as file:
             lang = ""

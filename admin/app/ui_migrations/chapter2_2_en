@@ -15,4 +15,10 @@ Valider mon classement
 tgt(btn_Chap3_redo)
 desc(btn_Chap3_redo)
 Recommencer le chapitre
+tgt(lbl_Chap4_name)
+desc(lbl_Chap4_name)
+<b>Chapitre 4 : Une soirée arrosée</b>
+tgt(lbl_Chap4_text)
+desc(lbl_Chap4_text)
+Après les débats, il est temps d’abreuver les orateurs·trices, avec de l’eau… ou d’autres boissons ! Comme c’est votre tournée, vous pouvez favoriser certain·e·s militant·e·s.
 
