@@ -10,6 +10,15 @@ tgt(Host)
 pos(2)
 Dans un premier temps, je vous invite à rejoindre, dans l’ordre de votre choix, les tablées de militant·e·s en pleins débats.
 
+title(2.2.3_Battles_After_Selection)
+language(EN)
+tgt(ObjectiveLoser)
+pos(0)
+Cher·ère candidat·e, je suis déçu·e et vous propose de trouver un compromis ! Je pourrais adapter ma proposition en augmentant la satisfaction de l’objectif de mon adversaire (val(objectiveWinner:desc)), tout en maintenant haute la satisfaction de mon objectif (val(objectiveLoser:desc)). 
+tgt(Host)
+pos(1)
+Je vous invite à ajuster la proposition de la personne qui vous demande de trouver un compromis, en augmentant le curseur de l’objectif de son adversaire (val(objectiveWinner:desc)). Augmentez jusqu’à ce que la proposition ajustée vous semble équivalente à la proposition initiale que vous aviez préférée. Ainsi, si les deux propositions initiales vous paraissaient déjà presque équivalentes, vous augmentez peu le curseur. Si au contraire la proposition non choisie était nettement inférieure, vous augmentez beaucoup le curseur. Plus vous augmentez le curseur, moins vous donnez de l’importance à la satisfaction de l’autre objectif (val(objectiveLoser:desc)).
+
 title(2.2.3_Battles_obj0_vs_obj1)
 language(EN)
 tgt(Objective0)
@@ -24,15 +33,6 @@ Hé, vous qui êtes candidat·e, qu’en dites-vous ?
 tgt(Objective0)
 pos(3)
 Oui, avec qui d’entre nous êtes-vous le plus d’accord ?
-
-title(2.2.3_Battles_After_Selection)
-language(EN)
-tgt(ObjectiveLoser)
-pos(0)
-Cher·ère candidat·e, je suis déçu·e et vous propose de trouver un compromis ! Je pourrais adapter ma proposition en augmentant la satisfaction de l’objectif de mon adversaire (val(objectiveWinner:desc)), tout en maintenant haute la satisfaction de mon objectif (val(objectiveLoser:desc)). 
-tgt(Host)
-pos(1)
-Je vous invite à ajuster la proposition de la personne qui vous demande de trouver un compromis, en augmentant le curseur de l’objectif de son adversaire (val(objectiveWinner:desc)). Augmentez jusqu’à ce que la proposition ajustée vous semble équivalente à la proposition initiale que vous aviez préférée. Ainsi, si les deux propositions initiales vous paraissaient déjà presque équivalentes, vous augmentez peu le curseur. Si au contraire la proposition non choisie était nettement inférieure, vous augmentez beaucoup le curseur. Plus vous augmentez le curseur, moins vous donnez de l’importance à la satisfaction de l’autre objectif (val(objectiveLoser:desc)).
 
 title(2.2.3_Battles_obj2_vs_obj3)
 language(EN)
