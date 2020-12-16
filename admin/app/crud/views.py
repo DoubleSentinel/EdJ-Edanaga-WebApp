@@ -81,6 +81,12 @@ class ConversationView(EmbeddedForm):
         },
     }
 
+    form_widget_args = {
+        'target_character': {
+            'disabled': True
+        }
+    }
+    
     column_labels = {
         'target_character': "Character",
         'language': "Language",
@@ -192,6 +198,11 @@ class SceneView(UserAccessFactory('user'), ModelView):
             'form_subdocuments': {
                 None: ConversationView(),
             }
+        }
+    }
+    form_widget_args = {
+        'conversation_title': {
+            'disabled': True
         }
     }
     column_labels = {
