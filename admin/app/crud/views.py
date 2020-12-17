@@ -54,6 +54,12 @@ class UIElementView(EmbeddedForm):
         },
     }
 
+    form_widget_args = {
+        'gameobject_id': {
+            'disabled': True
+        }
+    }
+
     column_labels = {
         'gameobject_id': "Character",
         'description': "Language",
@@ -86,7 +92,7 @@ class ConversationView(EmbeddedForm):
             'disabled': True
         }
     }
-    
+
     column_labels = {
         'target_character': "Character",
         'language': "Language",
@@ -121,7 +127,6 @@ class ConstantVariablesView(UserAccessFactory('user'), ModelView):
     }
 
 
-
 class UITranslationsView(UserAccessFactory('user'), ModelView):
     # can_create = False
     can_delete = False
@@ -147,20 +152,21 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
             'label': "UI Element in the scene",
         },
     }
+
     form_subdocuments = {
         'elements': {
             'form_subdocuments': {
-                None: {
-                    'form_widget_args': {
-                        'gameobject_id': {
-                            'disabled': True
-                        }
-                    }
-                }
+                None: UIElementView(),
             }
-
         }
     }
+
+    form_widget_args = {
+        'scene': {
+            'disabled': True
+        }
+    }
+
     column_labels = {
         'language': "Language of the UI",
         'scene': "Scene for this specific group of UI elements",
