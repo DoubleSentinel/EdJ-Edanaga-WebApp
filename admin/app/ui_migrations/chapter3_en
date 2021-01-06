@@ -12,9 +12,48 @@ desc(lbl_Chap6_initial_ranking)
 tgt(lbl_Chap6_MCDA_ranking_locked)
 desc(lbl_Chap6_MCDA_ranking_locked)
 <b>Classement des alternatives selon vos préférences d’objectifs : </b>
+tgt(lbl_Chap6_Alt0)
+desc(lbl_Chap6_Alt0)
+Réhabilitation de la STEP du village
+tgt(lbl_Chap6_Alt1)
+desc(lbl_Chap6_Alt1)
+Raccordement et mutualisation de la STEP régionale
+tgt(lbl_Chap6_Alt2)
+desc(lbl_Chap6_Alt2)
+Micro-stations décentralisées
+tgt(lbl_Chap6_Alt3)
+desc(lbl_Chap6_Alt3)
+Micro-stations décentralisées, avec séparation des urines
+tgt(lbl_Chap6_Alt4)
+desc(lbl_Chap6_Alt4)
+Micro-station décentralisées, avec séparation des urines et des selles
+tgt(lbl_Chap6_Alt5)
+desc(lbl_Chap6_Alt5)
+Nouvelle STEP du village, avec séparation des urines
 tgt(lbl_Chap6_MCDA_ranking_DnD)
 desc(lbl_Chap6_MCDA_ranking_DnD)
 <b>Classement des alternatives modifiable :</b>
+tgt(lbl_Chap6_MCDA_legend_small)
+desc(lbl_Chap6_MCDA_legend_small)
+Objectif peu rempli
+tgt(lbl_Chap6_MCDA_legend_medium)
+desc(lbl_Chap6_MCDA_legend_medium)
+Objectif moyennement rempli
+tgt(lbl_Chap6_MCDA_legend_large)
+desc(lbl_Chap6_MCDA_legend_large)
+Objectif bien rempli
+tgt(lbl_Chap6_MCDA_obj_groupA)
+desc(lbl_Chap6_MCDA_ obj_groupA)
+Limitation de la pollution des rivières
+tgt(lbl_Chap6_MCDA_obj_groupB)
+desc(lbl_Chap6_MCDA_ obj_groupB)
+Utilisation économe des ressources naturelles
+tgt(lbl_Chap6_MCDA_obj_groupC)
+desc(lbl_Chap6_MCDA_ obj_groupC)
+Acceptabilité sociale du système
+tgt(lbl_Chap6_MCDA_obj_groupD)
+desc(lbl_Chap6_MCDA_ obj_groupD)
+Limitation de la charge pour les différentes générations
 tgt(tuto_Chap6_dragndrop) 
 desc(tuto_Chap6_dragndrop)
 Cliquez sur l’alternative que vous préférez, maintenez le bouton de la souris pressé et déplacez la ligne en haut du classement, avant de relâcher le bouton de la souris. De la même manière, glissez-déposez votre deuxième alternative préférée à la seconde place, et ainsi de suite jusqu’à obtenir le classement de votre choix !
@@ -63,4 +102,5 @@ Mon dernier classement manuel
 tgt(btn_Chap6_Consistent_2orMore_MCDA)
 desc(btn_Chap6_Consistent_2orMore_MCDA)
 Le classement calculé selon mes préférences d’objectifs
+
 
