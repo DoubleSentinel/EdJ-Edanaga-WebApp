@@ -1,0 +1,26 @@
+scene(Chapter0)
+language(EN)
+tgt(lbl_Chap0_GameName)
+desc(lbl_Chap0_GameName)
+<b>Stimmen des Abwassers</b>
+
+tgt(lbl_Chap0_Game_subtitle)
+desc(lbl_Chap0_Game_subtitle)
+Finden Sie den besten Kompromiss !
+
+tgt(lbl_Chap0_text0)
+desc(lbl_Chap0_text0)
+Vous êtes à Neuwässerli, un village rural suisse de 2'000
+habitant·e·s. En cette période d’élections, le village est en pleine effervescence. Habitant·e bien connu de la région, vous avez décidé de franchir le pas et de vous porter candidat·e. Félicitations !
+
+tgt(lbl_Chap0_text1)
+desc(lbl_Chap0_text1)
+A l’écoute de vos concitoyen·ne·s, vous appréciez les rencontrer et les laisser argumenter avec vous de sujets d’actualité. Toutefois, le programme politique que vous allez proposer doit refléter votre propre opinion. Veillez à être le·la plus consistant·e possible dans vos décisions afin d’obtenir la confiance de la population. Ainsi, peut-être réussirez-vous à vous faire élire !
+
+tgt(lbl_Chap0_text2)
+desc(lbl_Chap0_text2)
+Créez votre candidat·e ! Parmi les personnages suivants, choisissez celui qui vous correspond le mieux. Indiquez également votre pseudonyme et votre parti politique.
+
+tgt(lbl_Chap0_text3)
+desc(lbl_Chap0_text3)
+Si vous quittez la partie en cours, il est possible de reprendre là où vous êtes resté·e. Le nom indiqué est votre <i>Nom d’utilisateur<i/>, le parti politique est votre <i>Mot de passe</i>.

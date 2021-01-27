@@ -1,0 +1,22 @@
+scene(Chapter4.0)
+language(EN)
+tgt(lbl_Chap7_name)
+desc(lbl_Chap7_name)
+<b>Chapitre 7 : L’élection</b>
+
+tgt(lbl_Chap7_text)
+desc(lbl_Chap7_text)
+Grâce à votre étude approfondie des différentes alternatives et votre démarche participative de prise en considération des avis des militant·e·s, vous avez convaincu. Grâce à votre effort reconnu, vous gagnez l'élection !
+
+tgt(lbl_Chap7_congrats)
+desc(lbl_Chap/_congrats)
+<b>Félicitations !!!</b>
+
+tgt(lbl_Chap7_end)
+desc(lbl_Chap7_end)
+<b>Crédits :</b>
+
+tgt(lbl_Chap7_end)
+desc(lbl_Chap7_text)
+Ce questionnaire gamifié a été réalisé par Entrée de Jeux pour Eawag (Institut Fédéral Suisse des Sciences et Technologies de l’Eau). Pour les besoins de l'étude et pour recevoir votre compensation, cliquez sur le lien suivant : lien cliquable…
+

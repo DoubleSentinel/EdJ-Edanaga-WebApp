@@ -1,0 +1,10 @@
+scene(Chapter2.0)
+language(EN)
+tgt(lbl_Chap2_name)
+desc(lbl_Chap2_name)
+<b>Chapitre 2 : Dialogue avec les militant·e·s</b>
+
+tgt(lbl_Chap2_text)
+desc(lbl_Chap2_text)
+La balle est dans votre camp ! Allez à la rencontre de chacun-e des 10 militant·e·s pour en savoir plus sur les objectifs que ces personnes défendent.
+
