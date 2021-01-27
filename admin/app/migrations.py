@@ -209,33 +209,30 @@ with app.app_context():
 
     ### UITranslations
     for filename in os.listdir('./ui_migrations'):
-        with open('./ui_migrations/' + filename) as file:
-            lang = ""
-            scene = ""
-            ui_block = []
-            for line in file:
+        with open('./ui_migrations/' + filename) as f:
+            scene = re.search(in_parentheses, f.readline()).group(1)
+            lang = re.search(in_parentheses, f.readline()).group(1)
+            tgt = ""
+            desc = ""
+            ui_elements = []
+            text_content = []
+            for line in f:
                 if line in ["\n", "\r\n"]:
-                    if re.match(header_scene, ui_block[0]):
-                        scene = re.search(in_parentheses, ui_block[0]).group(1)
-                    if re.match(header_language, ui_block[1]):
-                        lang = re.search(in_parentheses, ui_block[1]).group(1)
-
-                    ui_element = []
-                    for block in ui_block[2:]:
-                        if re.match(target_tag, block):
-                            tgt = re.search(in_parentheses, block).group(1)
-                        elif re.match(desc_tag, block):
-                            desc = re.search(in_parentheses, block).group(1)
-                        else:
-                            ui_element.append(UIElement(gameobject_id=tgt,
-                                                        description=desc,
-                                                        text_value=block.rstrip()))
-                    UITranslations(language=languages[lang],
-                                   scene=scene,
-                                   elements=ui_element).save()
-                    ui_block = []
+                    ui_elements.append(UIElement(gameobject_id=tgt,
+                                                description=desc,
+                                                text_value="".join(text_content)))
+                    text_content = []
                 else:
-                    ui_block.append(line)
+                    if re.match(target_tag, line):
+                        tgt = re.search(in_parentheses, line).group(1)
+                    elif re.match(desc_tag, line):
+                        desc = re.search(in_parentheses, line).group(1)
+                    else:
+                        text_content.append(line)
+            UITranslations(language=languages[lang],
+                           scene=scene,
+                           elements=ui_elements).save()
+
     #### TitleScreen
     UITranslations(language=english,
                    scene="TitleScreen",
