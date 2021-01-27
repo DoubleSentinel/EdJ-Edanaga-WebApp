@@ -146,3 +146,4 @@ Il faut penser à la flexibilité des systèmes entre les différentes générat
 tgt(Player)
 pos(3)
 Je vous remercie de m’avoir donné votre avis et ces détails ! J’en tiendrai compte au maximum. Au revoir !
+

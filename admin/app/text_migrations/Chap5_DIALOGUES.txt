@@ -20,3 +20,4 @@ title(2.2.14_Outro_host_chap5)
 tgt(host)
 pos(0)
 Toutes mes félicitations ! Vous avez su donner patiemment vos préférences, en tenant compte des avis de vos concitoyen·ne·s. J’ai entendu dire que vous revoyez le journaliste demain… Bonne chance et bonne nuit de sommeil à vous !
+

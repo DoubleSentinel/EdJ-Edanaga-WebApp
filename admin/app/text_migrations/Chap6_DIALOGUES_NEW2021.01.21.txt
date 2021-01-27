@@ -63,3 +63,4 @@ language(EN)
 tgt(journalist)
 pos(0)
 Un énorme merci de nous avoir accordé votre temps et nous avoir exprimé vos préférences aussi précisément. Je vais en tenir compte dans mon article et vous souhaite bonne chance pour l’élection !
+
