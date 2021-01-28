@@ -10,8 +10,7 @@ Finden Sie den besten Kompromiss !
 
 tgt(lbl_Chap0_text0)
 desc(lbl_Chap0_text0)
-Vous êtes à Neuwässerli, un village rural suisse de 2'000
-habitant·e·s. En cette période d’élections, le village est en pleine effervescence. Habitant·e bien connu de la région, vous avez décidé de franchir le pas et de vous porter candidat·e. Félicitations !
+Vous êtes à Neuwässerli, un village rural suisse de 2'000 habitant·e·s. En cette période d’élections, le village est en pleine effervescence. Habitant·e bien connu de la région, vous avez décidé de franchir le pas et de vous porter candidat·e. Félicitations !
 
 tgt(lbl_Chap0_text1)
 desc(lbl_Chap0_text1)
