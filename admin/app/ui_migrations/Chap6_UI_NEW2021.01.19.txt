@@ -57,19 +57,19 @@ desc(lbl_Chap6_MCDA_legend_large)
 Objectif bien rempli
 
 tgt(lbl_Chap6_MCDA_obj_groupA)
-desc(lbl_Chap6_MCDA_ obj_groupA)
+desc(lbl_Chap6_MCDA_obj_groupA)
 Limitation de la pollution des rivières
 
 tgt(lbl_Chap6_MCDA_obj_groupB)
-desc(lbl_Chap6_MCDA_ obj_groupB)
+desc(lbl_Chap6_MCDA_obj_groupB)
 Utilisation économe des ressources naturelles
 
 tgt(lbl_Chap6_MCDA_obj_groupC)
-desc(lbl_Chap6_MCDA_ obj_groupC)
+desc(lbl_Chap6_MCDA_obj_groupC)
 Acceptabilité sociale du système
 
 tgt(lbl_Chap6_MCDA_obj_groupD)
-desc(lbl_Chap6_MCDA_ obj_groupD)
+desc(lbl_Chap6_MCDA_obj_groupD)
 Limitation de la charge pour les différentes générations
 
 tgt(tuto_Chap6_dragndrop) 
