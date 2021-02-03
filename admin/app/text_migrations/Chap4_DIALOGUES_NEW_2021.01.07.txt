@@ -10,7 +10,7 @@ tgt(host)
 pos(0)
 Vous voici à la table des militant·e·s contre la pollution des rivières. Imaginez la situation la pire, où presque tous les polluants restent malgré le traitement des eaux. Si vous pouviez améliorer cette situation en traitant au mieux une seule des deux catégories de polluants, laquelle choisiriez-vous en priorité ?
 
-title(2.2.8.2_Swing_ famB) 
+title(2.2.8.2_Swing_famB)
 language(EN)
 tgt(host)
 pos(0)
