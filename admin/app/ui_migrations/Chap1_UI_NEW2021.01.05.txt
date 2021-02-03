@@ -115,7 +115,7 @@ desc(lbl_Alternative2_Title1)
 <b>Micro-stations décentralisées</b>
 
 tgt(lbl_Alternative2_Desc_Title)
-desc(lbl_Alternative2_Desc_Title )
+desc(lbl_Alternative2_Desc_Title)
 <b>Présentation & fonctionnement</b>
 
 tgt(lbl_Alternative2_Desc_Text)
@@ -147,7 +147,7 @@ desc(lbl_Alternative3_Title1)
 <b>Micro-stations décentralisées, séparation des urines</b>
 
 tgt(lbl_Alternative3_Desc_Title)
-desc(lbl_Alternative3_Desc_Title )
+desc(lbl_Alternative3_Desc_Title)
 <b>Présentation & fonctionnement</b>
 
 tgt(lbl_Alternative3_Desc_Text)
