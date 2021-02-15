@@ -24,7 +24,8 @@ class SceneResource(Resource):
     }
 
     filters = {
-        'conversation_title': [operators.Exact]
+        'conversation_title': [operators.Exact],
+        'language': [operators.Exact]
     }
 
 
