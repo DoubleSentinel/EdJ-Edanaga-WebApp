@@ -176,6 +176,8 @@ class UITranslationsView(UserAccessFactory('user'), ModelView):
 class SceneView(UserAccessFactory('user'), ModelView):
     # can_create = False
     # can_delete = False
+    column_searchable_list = ['conversation_title']
+    # column_filters = ['language']
 
     column_list = [
         "conversation_title",
