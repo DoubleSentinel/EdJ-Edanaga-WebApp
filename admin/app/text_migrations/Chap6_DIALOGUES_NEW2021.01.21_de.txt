@@ -1,17 +1,17 @@
 title(3.1_Intro_journalist_Chap6)
-language(EN)
+language(DE)
 tgt(Journalist)
 pos(0)
 Bonjour ! J’espère que votre campagne se déroule bien. Je me réjouis de publier cet article avec vos éventuels ajustements d’opinion. Il est si important d’être cohérent en politique, de nos jours !  Pour rappel, voici le classement des alternatives que vous m’aviez donné lors de notre première rencontre…
 
 title(3.1.3_Intro_engineer_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 Comme vous avez pu le constater, il faut prendre en compte différents objectifs dans le choix d’un système de traitement des eaux, et il est impossible de tous les satisfaire simultanément. Grâce aux informations de l’aubergiste, j’ai pu calculer un classement des alternatives qui serait au plus près de vos opinions exprimées au bar concernant les objectifs. Je vais vous montrer ce classement sur un tableau indiquant sur quels objectifs les alternatives sont avantageuses ou désavantageuses…
 
 title(3.2_Consistent_check_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 J’ai analysé la cohérence entre votre classement effectué manuellement et le classement obtenu grâce à vos préférences pour les différents objectifs défendus par les militant·e·s…
@@ -20,7 +20,7 @@ pos(1)
 Bonne nouvelle : l’ingénieure m’a annoncé que vos classements sont consistants ! Cela renforcera vos chances pour l’élection, foi de journaliste.
 
 title(3.2_Inconsistent_check_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 J’ai analysé la cohérence entre votre classement effectué manuellement et le classement obtenu grâce à vos préférences pour les différents objectifs défendus par les militant·e·s…
@@ -29,37 +29,37 @@ pos(1)
 Malheureusement, l’ingénieure m’a annoncé que vos classements sont inconsistants ! Je vous invite donc à revoir vos préférences pour renforcer votre crédibilité et vos chances pour l’élection.
 
 title(3.3.1_Informed_ranking_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 Je vous invite à revoir votre classement sur le tableau récapitulant les avantages et inconvénients des alternatives. Pour garantir votre cohérence, essayez de satisfaire au mieux les objectifs pour lesquels vous avez indiqué une préférence au bar !
 
 title(3.4.1_Multiple_choices_rankings_Chap6)
-language(EN)
+language(DE)
 tgt(journalist)
 pos(0)
 Même si vos classements ne sont pas tout à fait consistants entre eux, il y en a peut-être un qui représente au mieux votre opinion, par rapport aux autres. Ou souhaiteriez-vous plutôt réviser vos jugements à propos des objectifs ? Dans tous les cas, ces choix vous appartiennent !
 
 title(3.5.1_Consistent_choice_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 Globalement, votre classement manuel des alternatives et le classement basé sur vos jugements sur les objectifs sont consistants, je vous en félicite ! Cependant, il y a peut-être de légères différences, et j’aimerais savoir quel classement représenterait au mieux votre opinion si vous deviez vraiment choisir… 
 
 title(3.5.1_Very_Consistent_choice_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 Votre classement manuel des alternatives et le classement basé sur vos jugements sur les objectifs sont très consistants, je vous en félicite !
 
 title(3.6_Inconsistent_but_ok_Chap6)
-language(EN)
+language(DE)
 tgt(engineer)
 pos(0)
 Même si vous n’êtes pas parvenu·e à trouver une excellente consistance entre vos classements, vous avez pu nous donner vos préférences. Cela nous sera très utile et je vous en remercie beaucoup !
 
 title(3.7_Outro_Chap6)
-language(EN)
+language(DE)
 tgt(journalist)
 pos(0)
 Un énorme merci de nous avoir accordé votre temps et nous avoir exprimé vos préférences aussi précisément. Je vais en tenir compte dans mon article et vous souhaite bonne chance pour l’élection !

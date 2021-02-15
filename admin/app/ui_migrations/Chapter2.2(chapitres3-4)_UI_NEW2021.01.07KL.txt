@@ -2,11 +2,11 @@ scene(Chapter2.2)
 language(EN)
 tgt(lbl_Chap3_name)
 desc(lbl_Chap3_name)
-<b>Chapitre 3 : Débats et battles au « Bargain »</b>
+<b>Chapitre 3 : Débats et battles au <i>Bargain</i></b>
 
 tgt(lbl_Chap3_text)
 desc(lbl_Chap3_text)
-Vous êtes invité·e à une soirée animée sur le sujet des eaux usées, où les militant·e·s vont débattre. Vous devrez exprimer votre accord ou désaccord avec leurs opinions. Vous devrez aussi essayer de trouver des compromis !
+Vous êtes invité·e à une soirée animée sur le sujet des eaux usées, où les militant·e·s vont débattre. Vous devrez exprimer vos préférences et essayer de trouver des compromis !
 
 tgt(lbl_Chap3_Results_title)
 desc(lbl_Chap3_Results_title)

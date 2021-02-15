@@ -1,0 +1,149 @@
+title(2.1.2_Dialogue_objective0) 
+language(DE)
+tgt(Objective0)
+pos(0)
+Guten Tag. Was kann ich für Sie tun?
+tgt(Player)
+pos(1)
+Guten Tag. Ich bin val(username) und kandidiere für die kommende Wahl. Ich möchte Sie kurz zum Thema Abwassermanagement befragen, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective0)
+pos(2)
+Ah, ich verstehe! Das Allerwichtigste bei der Abwasserbehandlung ist die weitestgehende Entfernung der vorhandenen Stickstoffverbindungen. Die chemische Formel von Stickstoff ist symbolisch auf meinem T-Shirt aufgedruckt. Stickstoffverbindungen stammen von organischen Abfallprodukten im Wasser (Speiseresten und Exkrementen); manche von ihnen können ein Fischsterben verursachen. Im Idealfall beseitigen die Systeme val(objective0:best) % dieser Stickstoffverbindungen, im ungünstigsten Fall lediglich val(objective0:worst) %, was leider dem aktuellen Stand der Dinge entspricht.
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Äusserungen und Erklärungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective1) 
+language(DE)
+tgt(Objective1)
+pos(0)
+Guten Tag. Was ist der Anlass Ihres Besuchs?
+tgt(Player)
+pos(1)
+Guten Tag. Ich heisse val(username) und kandidiere für die kommende Wahl. Mich interessiert Ihre Expertenmeinung zum Thema Abwassermanagement, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective1)
+pos(2)
+Oh, ich verstehe! Ein ganz wesentlicher Aspekt der Abwasserreinigung ist die Entfernung der vorhandenen Mikroverunreinigungen, die auf Arzneimittelrückstände, Hormone, Kosmetika usw. zurückzuführen sind. Aus diesem Grund trage ich ein T-Shirt mit einer symbolisch aufgedruckten Tablette. Diese Substanzen verunreinigen die Gewässer und beeinträchtigen das aquatische Leben. Sie können zum Beispiel die Fortpflanzung der Fische empfindlich stören. Im Idealfall kann man val(objective1:best) % dieser Mikroverunreinigungen entfernen, im ungünstigsten Fall lediglich val(objective1:worst) %, was leider dem aktuellen Stand der Dinge entspricht.
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Ansichten und Erläuterungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective2) 
+language(DE)
+tgt(Objective2)
+pos(0)
+Guten Tag. Wie kann ich Ihnen behilflich sein?
+tgt(Player)
+pos(1)
+Guten Tag. Mein Name ist val(username), ich kandidiere für die kommende Wahl. Ich hätte gerne Ihre Meinung zum Thema Abwassermanagement eingeholt, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective2)
+pos(2)
+Abwasser enthält Phosphor, dessen Rückgewinnung und Recycling extrem wichtig sind. Phosphor entstammt dem Urin und ist ein wichtiger natürlicher Dünger mit regionaler Herkunft, wie es die abgebildete Pflanze auf meinem T-Shirt symbolisiert. Im Idealfall können val(objective2:best) % des gelöstem Phosphors im Abwasser rückgewonnen werden, im ungünstigsten Fall – was leider den traurigen Ist-Zustand widerspiegelt – lediglich val(objective2:worst) %.
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Stellungnahme und Ihre Informationen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective3) 
+language(DE)
+tgt(Objective3)
+pos(0)
+Guten Tag. Was führt Sie zu uns?
+tgt(Player)
+pos(1)
+Guten Tag. Ich heisse val(username) und kandidiere für die kommende Wahl. Ich suche Sie heute zum Thema Abwassermanagement auf, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective3)
+pos(2)
+Abwassermanagementsysteme müssen eine mehr oder weniger grosse Wassermenge bewältigen. Wasser zu sparen ist äusserst wichtig, denn diese Ressource verknappt und verteuert sich zunehmend. Aus diesem Grund trage ich einen Wassertropfen auf meinem Herz. Allein schon mit Toilettenspülungen verbrauchen wir derzeit bis zu val(objective3:worst) Liter pro Person und Tag, was man im Idealfall auf val(objective3:best) Liter reduzieren könnte!
+tgt(Player)
+pos(3)
+Ich danke Ihnen für Ihre Äusserungen und Ausführungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective4) 
+language(DE)
+tgt(Objective4)
+pos(0)
+Guten Tag. Benötigen Sie eine Auskunft?
+tgt(Player)
+pos(1)
+Guten Tag. Darf ich mich vorstellen? Ich heisse val(username) und kandidiere für die kommende Wahl. Ich komme zum Thema Abwassermanagement bei Ihnen vorbei, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective4)
+pos(2)
+Global betrachtet benötigt die Abwasserreinigung viel Energie. Der Blitz auf meinem T-Shirt symbolisiert das. Nur wenn wir Energie sparen, können wir die Treibhausgasemissionen senken und dem Klimawandel entgegenwirken! Pro Person verbrauchen wir derzeit jedes Jahr 254 Kilowattstunden Nettoenergie (verbrauchte Energie abzüglich erzeugter Energie). Im ungünstigsten Fall beträgt der Nettoenergieverbrauch val(objective4:worst) kWh pro Person und Jahr, im besten Fall val(objective4:best) kWh.
+tgt(Player)
+pos(3)
+Ich danke Ihnen für Ihre Ansicht und Ihre Angaben zu diesem Thema. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective5) 
+language(DE)
+tgt(Objective5)
+pos(0)
+Guten Tag. Was kann ich für Sie tun?
+tgt(Player)
+pos(1)
+Guten Tag. Ich bin val(username) und kandidiere für die kommende Wahl. Ich möchte Sie kurz zum Thema Abwassermanagement befragen, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective5)
+pos(2)
+Ja, gerne. Am wichtigsten ist der Gesundheitsschutz – das Kreuz auf meinem T-Shirt symbolisiert das. Aufgrund der im Abwasser enthaltenen menschlichen Exkremente enthält Abwasser unzählige Bakterien. Je stärker man mit diesen Keimen in Kontakt kommt, umso grösser ist das Risiko einer Magen- oder Darminfektion. Wie es aktuell glücklicherweise der Fall ist, kommt es pro Kopf und Jahr nur zu val(objective5:best) Kontakten mit solchen Bakterien; im schlimmsten Fall kann sich diese Zahl auf val(objective5:worst) Kontakte pro Jahr erhöhen.
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Äusserungen und Erklärungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective6) 
+language(DE)
+tgt(Objective6)
+pos(0)
+Guten Tag. Was ist der Anlass Ihres Besuchs?
+tgt(Player)
+pos(1)
+Guten Tag. Ich heisse val(username) und kandidiere für die kommende Wahl. Mich interessiert Ihre Expertenmeinung zum Thema Abwassermanagement, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective6)
+pos(2)
+Ganz wichtig für mich sind ansprechende hygienische Verhältnisse, damit wir uns wohlfühlen. Das Symbol auf meinem T-Shirt steht für saubere, geruchsneutrale Toiletten. Der Anblick und der Geruch von Abwasser und Exkrementen ekelt uns ja meistens an. Unser aktuelles System hat jedoch eine Expertenjury überzeugt und wurde mit der Note 9 von insgesamt 10 hervorragend bewertet. Im Bestfall könnte es val(objective6:best) von insgesamt 10 erzielen, im schlechtesten Fall val(objective6:worst) von 10.
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Äusserungen und Erläuterungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective7) 
+language(DE)
+tgt(Objective7)
+pos(0)
+Guten Tag. Wie kann ich Ihnen behilflich sein?
+tgt(Player)
+pos(1)
+Guten Tag. Mein Name ist val(username), ich kandidiere für die kommende Wahl. Ich hätte gerne Ihre Meinung zum Thema Abwassermanagement eingeholt, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective7)
+pos(2)
+Ein wesentlicher Aspekt bei der Abwasserreinigung ist der Faktor Zeit: Dieser Prozess sollte die Nutzenden so wenig Zeit wie möglich kosten. Deshalb ist eine Sanduhr auf meinem T-Shirt abgebildet. Manche Systeme werden nicht nur durch Profis gesteuert, sondern erfordern zusätzliche Betriebs-, Wartungs- oder Kontrollmassnahmen seitens der Nutzenden, was kostbare Zeit in Anspruch nimmt. Im Idealfall wenden die Nutzenden dafür val(objective7:best) Stunden pro Jahr auf, im ungünstigsten Fall val(objective7:worst) Stunden. 
+tgt(Player)
+pos(3)
+Vielen Dank für Ihre Stellungnahme und Ihre Informationen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective8) 
+language(DE)
+tgt(Objective8)
+pos(0)
+Guten Tag. Was führt Sie zu uns?
+tgt(Player)
+pos(1)
+Guten Tag. Ich heisse val(username) und kandidiere für die kommende Wahl. Ich suche Sie zum Thema Abwassermanagement auf, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective8)
+pos(2)
+Die jährlichen Betriebs- und Wartungskosten sollten so niedrig wie möglich gehalten werden. Deshalb verkörpert das Symbol, das ich trage, Geld. Die Abwasserreinigung beansprucht personelle und materielle Ressourcen. Die damit verbundenen Kosten beeinflussen die Beiträge der Steuerzahlenden. In einem Dorf wie dem unsrigen ist das derzeit installierte System – hochgerechnet auf 20 Jahre – das kostengünstigste: Pro Kopf und Jahr kostet es val(objective8:best) CHF. Das teuerste System würde val(objective8:worst) CHF kosten.
+tgt(Player)
+pos(3)
+Ich danke Ihnen für Ihre Äusserungen und Ausführungen. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
+title(2.1.2_Dialogue_objective9) 
+language(DE)
+tgt(Objective9)
+pos(0)
+Guten Tag. Benötigen Sie eine Auskunft?
+tgt(Player)
+pos(1)
+Guten Tag. Darf ich mich vorstellen? Ich heisse val(username) und kandidiere für die kommende Wahl. Ich komme zum Thema Abwassermanagement bei Ihnen vorbei, um zu erfahren, was meine Mitbürgerinnen und Mitbürger darüber denken.
+tgt(Objective9)
+pos(2)
+Die eingesetzten Systeme sollten so flexibel sein, dass sie auch für künftige Anwendergenerationen geeignet sind. Mein Symbol verkörpert diese Generationen. Das aktuelle Abwasserreinigungssystem wird nach 2040 noch weitere 17 Jahre im Einsatz sein, doch die Lokalbevölkerung wird sich verändern. Das System ist also nicht flexibel genug. Sehr flexible Installationen haben eine Lebensdauer von val(objective9:best) Jahren, Systeme ohne Spielraum dagegen sind bis zu val(objective9:worst) Jahre im Einsatz. 
+tgt(Player)
+pos(3)
+Ich danke Ihnen für Ihre Ansicht und Ihre Angaben zu diesem Thema. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!

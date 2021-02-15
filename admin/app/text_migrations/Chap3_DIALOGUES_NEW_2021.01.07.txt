@@ -29,10 +29,7 @@ title(2.2.3_Battles_After_Selection)
 language(EN)
 tgt(ObjectiveLoser)
 pos(0)
-Cher·ère candidat·e, je suis déçu·e et vous propose de trouver un compromis ! Je pourrais adapter ma proposition en augmentant la satisfaction de l’objectif de mon adversaire (val(objectiveWinner:desc)), tout en maintenant haute la satisfaction de mon objectif (val(objectiveLoser:desc)). 
-tgt(Host)
-pos(1)
-Je vous invite à ajuster la proposition de la personne qui vous demande de trouver un compromis, en augmentant le curseur de l’objectif de son adversaire (val(objectiveWinner:desc)). Augmentez jusqu’à ce que la proposition ajustée vous semble équivalente à la proposition initiale que vous aviez préférée. Ainsi, si les deux propositions initiales vous paraissaient déjà presque équivalentes, vous augmentez peu le curseur. Si au contraire la proposition non choisie était nettement inférieure, vous augmentez beaucoup le curseur. Plus vous augmentez le curseur, moins vous donnez de l’importance à la satisfaction de l’autre objectif (val(objectiveLoser:desc)).
+Cher·ère candidat·e, je suis déçu·e et vous propose de trouver un compromis ! Je vous invite à adapter ma proposition, en augmentant le curseur de l’objectif de mon adversaire (val(objectiveWinner:desc)). Augmentez jusqu’à ce que la proposition ajustée vous semble équivalente à la proposition de mon adversaire. Ainsi, si nos deux propositions initiales vous paraissaient déjà presque équivalentes, vous augmentez peu le curseur. Si au contraire ma proposition était nettement inférieure, vous augmentez beaucoup le curseur. Plus vous augmentez le curseur, moins vous donnez de l’importance à la satisfaction de mon objectif (val(objectiveLoser:desc)).
 
 title(2.2.3_Battles_obj2_vs_obj3)
 language(EN)
@@ -434,11 +431,10 @@ title(2.2.6_Battles_preliminaryResults)
 language(EN)
 tgt(Host)
 pos(0)
-Chers·ères concitoyen·ne·s et ami·e·s, nous allons maintenant présenter le classement des militant·e·s, selon les avis exprimés par le·la candidat·e à l’élection, qui pourra nous indiquer si ce classement lui convient. Sinon, nous reprendrons les débats ! Cher·ère candidat·e, acceptez-vous ce classement ?
+Chers·ères concitoyen·ne·s et ami·e·s, nous allons maintenant présenter le classement des militant·e·s, selon les avis exprimés par le·la candidat·e à l’élection, qui pourra nous indiquer si ce classement lui convient. Sinon, nous reprendrons les débats !
 
 title(2.2.6.4_Battles_finalResults) 
 language(EN)
 tgt(Host)
 pos(0)
 Et voici le·la grand·e vainqueur·e des débats, accompagné·e par sa tablée ! Vous pouvez l’applaudir !
-

@@ -10,7 +10,7 @@ tgt(host)
 pos(0)
 Vous voici à la table des militant·e·s contre la pollution des rivières. Imaginez la situation la pire, où presque tous les polluants restent malgré le traitement des eaux. Si vous pouviez améliorer cette situation en traitant au mieux une seule des deux catégories de polluants, laquelle choisiriez-vous en priorité ?
 
-title(2.2.8.2_Swing_famB)
+title(2.2.8.2_Swing_famB) 
 language(EN)
 tgt(host)
 pos(0)
@@ -49,4 +49,3 @@ title(2.2.8.2_Swing_Explanation_Plural)
 tgt(host)
 pos(0)
 Vous pouvez maintenant servir à boire aux autres membres de la tablée, pour indiquer à quel point vous souhaitez également améliorer la situation du pire au meilleur, par rapport à leur objectif. Servez-les selon leur importance <i>relative</i> par rapport à l’objectif de la personne avec le verre plein ! Pour chaque verre, vous le remplirez peu si l’objectif est nettement moins important que celui au verre plein, à moitié si l’objectif est à moitié aussi important, et entièrement si les deux objectifs sont aussi importants. Utilisez votre souris pour ajuster le niveau de liquide dans un verre !
-

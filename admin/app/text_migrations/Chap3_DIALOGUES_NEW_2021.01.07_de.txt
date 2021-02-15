@@ -1,0 +1,443 @@
+title(2.2.1_Intro_host_Chap3)
+language(DE)
+tgt(Host)
+pos(0)
+Willkommen im «Bargain», dem Stammlokal von Neuwässerli! Als Wahlkandidatin bzw. Wahlkandidat werden Sie die Debatte kritisch verfolgen und bewerten. Sie werden die Argumente der Aktivistinnen und Aktivisten, die diese jeweils auf den Tisch – und danach auf die Bühne – bringen werden, anhören und beurteilen. Wir werden diesen geselligen Abend mit ein paar Getränkerunden an der Bar ausklingen lassen.
+tgt(Host)
+pos(1)
+Achten Sie darauf, dass Sie den ganzen Abend lang zu Ihrem Wort und Ihrer Meinung stehen. Ihre Glaubwürdigkeit ist entscheidend für Ihre Wahl!
+tgt(Host)
+pos(2)
+Zunächst bitte ich Sie, in beliebiger Reihenfolge die jeweiligen Tafelrunden der Aktivistinnen/Aktivisten aufzusuchen und sich in die Diskussion mit einzubringen.
+
+title(2.2.3_Battles_obj0_vs_obj1)
+language(DE)
+tgt(Objective0)
+pos(0)
+Ich sage dir nun schon zum wiederholten Mal, dass Stickstoffverbindungen die Hauptverursacher der Schadstoffbelastung sind! Ich bin dafür, dass man val(objective0:best) % dieser Verbindungen herausfiltert und nur val(objective1:worst) % der Mikroverunreinigungen entfernt.
+tgt(Objective1)
+pos(1)
+Auf keinen Fall! Damit bin ich nicht einverstanden. Meiner Meinung nach beeinträchtigen Mikroverunreinigungen das aquatische Leben noch viel mehr! Es ist besser, val(objective1:best) % der Mikroverunreinigungen zu eliminieren, auch wenn man nur val(objective0:worst) % der Stickstoffverbindungen entfernt.
+tgt(Objective1)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective0)
+pos(3)
+Wessen Meinung teilen Sie?
+
+title(2.2.3_Battles_After_Selection)
+language(DE)
+tgt(ObjectiveLoser)
+pos(0)
+Liebe Kandidatin / lieber Kandidat, ich bin enttäuscht und fordere Sie auf, einen Kompromiss einzugehen! Ich könnte meinen Vorschlag anpassen und die Zielsetzung meiner Gegenpartei begünstigen (val(objectiveWinner:desc)), ohne meine eigene dadurch herabzusetzen (val(objectiveLoser:desc)). 
+tgt(Host)
+pos(1)
+Ich bitte Sie, den Vorschlag der Person, die Sie zur Kompromissbereitschaft aufgefordert hat, anzupassen, indem Sie mit dem Cursor die Zielsetzung der Gegenpartei erhöhen (val(objectiveWinner:desc)). Verändern Sie die Cursorposition so lange, bis die Zielsetzung der betreffenden Person gleichwertig mit derjenigen ihrer Gegenpartei ist. Falls beide Vorschläge schon von Anfang an relativ gleichwertig waren, müssen Sie den Cursor nur minimal verschieben. Sollte der von Ihnen nicht gewählte Vorschlag schon von Anfang an deutlich weniger Zustimmung erzielt haben, müssen Sie den Cursor deutlich verschieben. Je mehr Sie mit dem Cursor die Gewichtung eines der beiden Vorschläge erhöhen, umso geringer bewerten Sie den jeweils anderen Vorschlag und die Erreichung dieses Ziels (val(objectiveLoser:desc)).
+
+title(2.2.3_Battles_obj2_vs_obj3)
+language(DE)
+tgt(Objective2)
+pos(0)
+Phosphor spielt eine Schlüsselrolle bei der Abwasseraufbereitung, denn er ist ein natürlicher Dünger! Es ist besser, (objective2:best) % des Phosphors rückzugewinnen, auch wenn val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective3)
+pos(1)
+Ich erlaube mir, dir zu widersprechen. Die wichtigste Ressource überhaupt ist Wasser, es wird immer knapper. Ich bin dafür, dass Toilettenspülungen val(objective3:best) Liter Wasser verbrauchen, selbst wenn man val(objective2:worst) % Phosphor rückgewinnt.
+tgt(Objective3)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective2)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.3_Battles_obj3_vs_obj4)
+language(DE)
+tgt(Objective3)
+pos(0)
+Die wichtigste Ressource überhaupt ist Wasser – seine Verfügbarkeit nimmt mehr und mehr ab. Ich bin dafür, dass Toilettenspülungen val(objective3:best) Liter Wasser verbrauchen, selbst wenn die Abwasserreinigung mit val(objective4:worst) Kilowattstunden pro Person und Jahr zu Buche schlägt.
+tgt(Objective4)
+pos(1)
+Nein! Die wichtigste Ressource heutzutage ist Energie. Um die Treibhausgasemissionen zu senken, müssen wir Energie sparen. Es ist besser, nur val(objective4:best) kWh pro Person und Jahr zu verbrauchen, auch wenn val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective4)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective3)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.3_Battles_obj5_vs_obj6)
+language(DE)
+tgt(Objective5)
+pos(0)
+Es ist dir sicher bewusst, dass das Allerwichtigste der Schutz unserer Gesundheit ist. Wir müssen alles dafür tun, um uns vor bakteriellen Infektionskrankheiten zu schützen! Es ist besser, wenn die Menschen val(objective5:best) Mal im Jahr einem bakteriellen Risiko ausgesetzt sind, selbst wenn das Abwasserreinigungssystem durch eine Expertenjury hinsichtlich seiner Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective6)
+pos(1)
+Damit bin ich überhaupt nicht einverstanden! Das Wichtigste ist eine attraktive, komfortable Lösung, denn die Menschen möchten keine Abwasserreinigungssysteme, die ihren Alltag mit Gestank erfüllen. Hauptsache, die Expertenjury bewertet den Komfort des Systems mit der Note val(objective6:best) von 10, auch wenn man im Durchschnitt val(objective5:worst) Mal im Jahr einem bakteriellen Risiko ausgesetzt ist.
+tgt(Objective6)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective5)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.3_Battles_obj6_vs_obj7)
+language(DE)
+tgt(Objective6)
+pos(0)
+Du weisst, was ich darüber denke. Das Wichtigste ist eine attraktive, komfortable Lösung, denn die Menschen möchten keine schlechten Gerüche ertragen müssen. Hauptsache, die Expertenjury bewertet den Komfort des Systems mit der Note val(objective6:best) von 10, auch wenn man pro Jahr dann val(objective7:worst) Stunden für dessen Betrieb und Wartung aufwenden muss.
+tgt(objective7)
+pos(1)
+Oh nein, das sollte so wenig Zeit wie möglich in Anspruch nehmen, denn die Leute haben Besseres zu tun, als ihre Abwasserreinigung zu managen. Mir ist es lieber, die Leute wenden val(objective7:best) Stunden pro Jahr dafür auf, auch wenn die Attraktivität und der Komfort des Systems mit der Note val(objective6:worst) von 10 bewertet werden.
+tgt(objective7)
+pos(2)
+Sie vertreten uns ja als Kandidatin/Kandidat anlässlich der kommenden Wahlen. Was denken Sie darüber?
+tgt(objective6)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.3_Battles_obj8_vs_obj9)
+language(DE)
+tgt(Objective8)
+pos(0)
+Geld ist matchentscheidend: Die jährlichen Betriebs- und Wartungskosten sollten so gering wie möglich ausfallen, um die Steuerzahlenden nicht unnötig zu belasten! Ideal wären jährliche Kosten in Höhe von val(objective8:best) CHF pro Person, auch wenn das installierte System nicht flexibel und für eine Einsatzdauer von val(objective9:worst) Jahren konzipiert ist.
+tgt(Objective9)
+pos(1)
+Nein, man sollte hier langfristig denken. Flexibilität ist enorm wichtig: Künftige Generationen sollten solche Systeme an ihre Bedürfnisse anpassen können. Ich bevorzuge eine äusserst flexible Installation mit einer geplanten Einsatzdauer von val(objective9:best) Jahren, auch wenn das pro Person und Jahr dann val(objective8:worst) CHF kosten würde.
+tgt(Objective9)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective8)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.4_Battles_round2_Intro) 
+language(DE)
+tgt(Host)
+pos(0)
+Die Debatten an den Tischen sind hiermit beendet! An jedem Tisch hat sich aufgrund Ihrer Bewertung der unterschiedlichen Positionen eine Gewinnerin bzw. ein Gewinner herauskristallisiert. Sie/er wird sich nun auf der Bühne den Meinungen und Ansichten der anderen Siegerinnen/Sieger stellen.
+
+title(2.2.5_FinalBattles_obj0_vs_obj2)
+language(DE)
+tgt(Objective0)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Stickstoffverbindungen, die sehr schädlich für die Fischbestände sind. Es ist besser, val(objective0:best) % dieser Verbindungen zu entfernen, auch wenn val(objective2:worst) % des Phosphors rückgewonnen werden. 
+tgt(Objective2)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Phosphor, der als natürlicher Dünger eine wertvolle Ressource darstellt. Ich bin dafür, dass man val(objective2:best) % des Phosphors herausfiltert, selbst wenn man nur val(objective0:worst) % der Mikroverunreinigungen entfernt.
+tgt(Objective2)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective0)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj0_vs_obj3)
+language(DE)
+tgt(Objective0)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Stickstoffverbindungen, die sehr schädlich für die Fischbestände sind. Es ist besser, (objective0:best) % dieser Verbindungen herauszufiltern, auch wenn val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden. 
+tgt(Objective3)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Wasser, das immer knapper wird. Ich bin dafür, dass man val(objective3:best) Liter Wasser verbraucht, selbst wenn man nur val(objective0:worst) % der Stickstoffverbindungen entfernt.
+tgt(Objective3)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective0)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj0_vs_obj4)
+language(DE)
+tgt(Objective0)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Stickstoffverbindungen, die sehr schädlich für die Fischbestände sind. Es ist besser, (objective0:best) % dieser Verbindungen herauszufiltern, auch wenn val(objective4:worst) kWh pro Person und Jahr verbraucht werden. 
+tgt(Objective4)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Energie, deren Verbrauch zu Treibhausgasemissionen führt. Ich bin dafür, dass man val(objective4:best) kWh pro Person und Jahr verbraucht, selbst wenn man nur val(objective0:worst) % der Stickstoffverbindungen entfernt.
+tgt(Objective4)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective0)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj1_vs_obj2)
+language(DE)
+tgt(Objective1)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Mikroverunreinigungen, die das aquatische Leben beeinträchtigen. Es ist besser, val(objective1:best) % der Mikroverunreinigungen zu entfernen, auch wenn val(objective2:worst) % des Phosphors rückgewonnen werden. 
+tgt(Objective2)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Phosphor, der als natürlicher Dünger eine wertvolle Ressource darstellt. Ich bin dafür, dass man val(objective2:best) % des Phosphors herausfiltert, selbst wenn man nur val(objective1:worst) % der Mikroverunreinigungen entfernt.
+tgt(Objective2)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective1)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj1_vs_obj3)
+language(DE)
+tgt(Objective1)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Mikroverunreinigungen, die das aquatische Leben beeinträchtigen. Es ist besser, (objective1:best) % dieser Mikroverunreinigungen zu entfernen, auch wenn val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden. 
+tgt(Objective3)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Wasser, das immer knapper wird. Ich bin dafür, dass man val(objective3:best) Liter Wasser verbraucht, selbst wenn man nur val(objective1:worst) % der Mikroverunreinigungen entfernt.
+tgt(Objective3)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective1)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj1_vs_obj4)
+language(DE)
+tgt(Objective1)
+pos(0)
+Am allerwichtigsten, liebe Mitbürgerinnen und Mitbürger, ist die Entfernung der Schadstoffe, insbesondere der Mikroverunreinigungen, die das aquatische Leben beeinträchtigen. Es ist besser, (objective1:best) % dieser Mikroverunreinigungen zu entfernen, auch wenn val(objective4:worst) kWh pro Person und Jahr verbraucht werden. 
+tgt(Objective4)
+pos(1)
+Nein, liebe Freundinnen und Freunde! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Energie, deren Verbrauch Treibhausgasemissionen generiert. Ich bin dafür, dass man val(objective4:best) kWh pro Person und Jahr verbraucht, selbst wenn man nur val(objective1:worst) % der Mikroverunreinigungen entfernt.
+tgt(Objective4)
+pos(2)
+Was sagen Sie als Wahlkandidatin/Wahlkandidat denn dazu?
+tgt(Objective1)
+pos(3)
+Welche Position bevorzugen Sie?
+
+title(2.2.5_FinalBattles_obj2_vs_obj5)
+language(DE)
+tgt(Objective2)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Phosphor, der für natürliche Düngemittel so wertvoll ist. Ich bin dafür, dass val(objective2:best) % des Phosphors rückgewonnen werden, auch wenn die Nutzenden val(objective5:worst) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind.
+tgt(Objective5)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, vor allem unter dem gesundheitlichen Aspekt. Bakterien im Abwasser gefährden unsere Gesundheit! Ich bin dafür, dass man val(objective5:best) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt ist und dass höchstens val(objective2:worst) % des Phosphors rückgewonnen werden.
+tgt(Objective5)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective2)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj2_vs_obj6)
+language(DE)
+tgt(Objective2)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Phosphor, der für natürliche Düngemittel so wertvoll ist. Ich bin dafür, dass man val(objective2:best) % des Phosphors rückgewinnt, selbst wenn das Abwasserreinigungssystem durch eine Expertenjury hinsichtlich seiner Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective6)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, attraktiv ist und unsere Nasen nicht belästigt. Ich bin dafür, dass die Attraktivität des Systems mit der Note val(objective6:best) von 10 bewertet wird und dass höchstens val(objective2:worst) % des Phosphors rückgewonnen werden.
+tgt(Objective6)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective2)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj2_vs_obj7)
+language(DE)
+tgt(Objective2)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Phosphor, der für natürliche Düngemittel so wertvoll ist. Ich bin dafür, dass val(objective2:best) % des Phosphors rückgewonnen werden, selbst wenn das System val(objective7:worst) Stunden Betriebs- und Wartungsaufwand pro Jahr seitens der Nutzenden erfordert.
+tgt(Objective7)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird und dass der Betrieb und die Wartung so wenig Zeitaufwand wie möglich erfordern. Ich bin dafür, dass das System val(objective7:best) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert und dass höchstens val(objective2:worst) % des Phosphors rückgewonnen werden.
+tgt(Objective7)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective2)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj3_vs_obj5)
+language(DE)
+tgt(Objective3)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Wasser, das immer knapper wird. Ich bin dafür, dass val(objective3:best) Liter Wasser pro Person und Tag verbraucht werden, auch wenn die Nutzenden val(objective5:worst) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind.
+tgt(Objective5)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, vor allem unter dem gesundheitlichen Aspekt. Bakterien im Abwasser gefährden unsere Gesundheit! Ich bin dafür, dass man val(objective5:best) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt ist und dass höchstens val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective5)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective3)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj3_vs_obj6)
+language(DE)
+tgt(Objective3)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Wasser, das immer knapper wird. Ich bin dafür, dass man val(objective3:best) Liter Wasser pro Person und Tag verbraucht, selbst wenn das Abwasserreinigungssystem durch eine Expertenjury hinsichtlich seiner Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective6)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, attraktiv ist und unsere Nasen nicht belästigt. Ich bin dafür, dass die Attraktivität des Systems mit der Note val(objective6:best) von 10 bewertet wird und dass höchstens val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective6)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective3)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj3_vs_obj7)
+language(DE)
+tgt(Objective3)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist am allerwichtigsten, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Wasser, das immer knapper wird. Ich bin dafür, dass man val(objective3:best) Liter Wasser pro Person und Tag verbraucht, selbst wenn das System val(objective7:worst) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert.
+tgt(Objective7)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird und dass der Betrieb und die Wartung so wenig Zeitaufwand wie möglich erfordern. Ich bin dafür, dass das System val(objective7:best) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert und dass höchstens val(objective3:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective7)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective3)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj4_vs_obj5)
+language(DE)
+tgt(Objective4)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Energie, deren Verbrauch Treibhausgasemissionen generiert. Ich bin dafür, dass das System val(objective4:best) kWh pro Person und Jahr verbraucht, auch wenn die Nutzenden val(objective5:worst) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind.
+tgt(Objective5)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, vor allem unter dem gesundheitlichen Aspekt. Bakterien im Abwasser gefährden unsere Gesundheit! Ich bin dafür, dass man val(objective5:best) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt ist und dass höchstens val(objective4:worst) Liter Wasser pro Person und Tag verbraucht werden.
+tgt(Objective5)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective4)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj4_vs_obj6)
+language(DE)
+tgt(Objective4)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Energie, deren Verbrauch Treibhausgasemissionen generiert. Ich bin dafür, dass das System val(objective4:best) kWh pro Person und Jahr verbraucht, selbst wenn es durch eine Expertenjury hinsichtlich seiner Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective6)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, attraktiv ist und unsere Nasen nicht belästigt. Ich bin dafür, dass die Attraktivität des Systems mit der Note val(objective6:best) von 10 bewertet wird und dass höchstens val(objective4:worst) kWh pro Person und Jahr verbraucht werden.
+tgt(Objective6)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective4)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj4_vs_obj7)
+language(DE)
+tgt(Objective4)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Es ist enorm wichtig, sparsam mit den natürlichen Ressourcen umzugehen, vor allem mit Energie, deren Verbrauch Treibhausgasemissionen generiert. Ich bin dafür, dass das System val(objective4:best) kWh pro Person und Jahr verbraucht, selbst wenn es val(objective7:worst) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert.
+tgt(Objective7)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird und dass der Betrieb und die Wartung so wenig Zeitaufwand wie möglich erfordern. Ich bin dafür, dass das System val(objective7:best) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert und dass höchstens val(objective4:worst) kWh pro Person und Jahr verbraucht werden.
+tgt(Objective7)
+pos(2)
+Sie vertreten uns ja vielleicht bald schon auf politischer Ebene. Was denken Sie darüber?
+tgt(Objective4)
+pos(3)
+Wer von uns konnte Sie mit seiner Meinung am ehesten überzeugen?
+
+title(2.2.5_FinalBattles_obj5_vs_obj8)
+language(DE)
+tgt(Objective5)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, vor allem unter dem gesundheitlichen Aspekt. Bakterien im Abwasser gefährden unsere Gesundheit! Ich bin dafür, dass die Nutzenden val(objective5:best) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind, auch wenn das System val(objective8:worst) CHF pro Person und Jahr kostet.
+tgt(Objective8)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich und die jährlichen Betriebs- und Wartungskosten vernünftig sind. Ich bin dafür, dass das System val(objective8:best) CHF pro Person und Jahr kostet, auch wenn die Nutzenden val(objective5:worst) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind.
+tgt(Objective8)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective5)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.5_FinalBattles_obj5_vs_obj9)
+language(DE)
+tgt(Objective5)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, vor allem unter dem gesundheitlichen Aspekt. Bakterien im Abwasser gefährden unsere Gesundheit! Ich bin dafür, dass die Nutzenden val(objective5:best) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind, auch wenn das System nicht flexibel und für eine Einsatzdauer von val(objective8:worst) Jahren konzipiert ist.
+tgt(Objective9)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich sind und das System auch in Zukunft flexibel bleibt. Ich bin dafür, dass das System für eine Einsatzdauer von val(objective9:best) Jahren konzipiert ist, auch wenn die Nutzenden val(objective5:worst) Mal im Jahr möglicherweise einem bakteriellen Risiko ausgesetzt sind.
+tgt(Objective9)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective5)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.5_FinalBattles_obj6_vs_obj8)
+language(DE)
+tgt(Objective6)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, attraktiv ist und unsere Nasen nicht belästigt. Ich bin dafür, dass die Attraktivität des Systems mit der Note val(objective6:best) von 10 bewertet wird, auch wenn das System val(objective8:worst) CHF pro Person und Jahr kostet.
+tgt(Objective8)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich und die jährlichen Betriebs- und Wartungskosten vernünftig sind. Ich bin dafür, dass das System val(objective8:best) CHF pro Person und Jahr kostet, auch wenn seine Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective8)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective6)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.5_FinalBattles_obj6_vs_obj9)
+language(DE)
+tgt(Objective6)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird, attraktiv ist und unsere Nasen nicht belästigt. Ich bin dafür, dass die Attraktivität des Systems mit der Note val(objective6:best) von 10 bewertet wird, auch wenn das System nicht flexibel und für eine Einsatzdauer von val(objective8:worst) Jahren konzipiert ist.
+tgt(Objective9)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich sind und das System auch in Zukunft flexibel bleibt. Ich bin dafür, dass das System für eine Einsatzdauer von val(objective9:best) Jahren konzipiert ist, auch wenn seine Attraktivität mit der Note val(objective6:worst) von 10 bewertet wird.
+tgt(Objective9)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective6)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.5_FinalBattles_obj7_vs_obj8)
+language(DE)
+tgt(Objective7)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird und dass der Betrieb und die Wartung so wenig Zeitaufwand wie möglich erfordern. Ich bin dafür, dass das System val(objective7:best) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert, auch wenn es val(objective8:worst) CHF pro Person und Jahr kostet.
+tgt(Objective8)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich und die jährlichen Betriebs- und Wartungskosten vernünftig sind. Ich bin dafür, dass das System val(objective8:best) CHF pro Person und Jahr kostet, auch wenn es val(objective7:worst) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert.
+tgt(Objective8)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective7)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.5_FinalBattles_obj7_vs_obj9)
+language(DE)
+tgt(Objective7)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger! Am wichtigsten ist doch, dass das System von der Bevölkerung akzeptiert wird und dass der Betrieb und die Wartung so wenig Zeitaufwand wie möglich seitens der Nutzenden erfordern. Ich bin dafür, dass das System val(objective7:best) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert, auch wenn es nicht flexibel und für eine Einsatzdauer von val(objective8:worst) Jahren konzipiert ist.
+tgt(Objective9)
+pos(1)
+Damit bin ich nicht einverstanden. Am wichtigsten ist doch, dass die Kosten, die auf den kommenden Generationen lasten werden, so niedrig wie möglich sind und das System auch in Zukunft flexibel bleibt. Ich bin dafür, dass das System für eine Einsatzdauer von val(objective9:best) Jahren konzipiert ist, auch wenn es val(objective7:worst) Stunden Zeitaufwand pro Jahr seitens der Nutzenden erfordert.
+tgt(Objective9)
+pos(2)
+Sie werden vielleicht schon bald entscheidend mitbestimmen. Was ist Ihnen denn lieber?
+tgt(Objective7)
+pos(3)
+Welche der beiden Ansichten überzeugt Sie mehr?
+
+title(2.2.6_Battles_preliminaryResults) 
+language(DE)
+tgt(Host)
+pos(0)
+Liebe Mitbürgerinnen und Mitbürger, liebe Freundinnen und Freunde! Wir präsentieren euch nun die Rangliste der Aktivistinnen und Aktivisten. Sie basiert auf den Bewertungen der Wahlkandidatin / des Wahlkandidaten, die/der dazu Stellung nehmen und uns bestätigen wird, ob diese Rangzuordnung in seinem Sinn ist. Sollte dies nicht der Fall sein, werden wir erneut mit den Debatten beginnen!
+
+title(2.2.6.4_Battles_finalResults) 
+language(DE)
+tgt(Host)
+pos(0)
+Und dies ist die/der offizielle Siegerin/Sieger der Gesamtwertung im Kreise ihrer/seiner Tafelrunde! Euren Applaus bitte!

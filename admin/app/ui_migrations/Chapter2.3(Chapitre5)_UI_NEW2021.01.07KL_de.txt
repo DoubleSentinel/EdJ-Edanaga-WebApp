@@ -1,0 +1,70 @@
+scene(Chapter2.3)
+language(DE)
+tgt(lbl_Chap5_name)
+desc(lbl_Chap5_name)
+<b>Chapitre 5 : L’heure de vérité</b>
+
+tgt(lbl_Chap5_text)
+desc(lbl_Chap5_text)
+En fin de soirée, vous vous retrouvez seul·e avec l’aubergiste, qui a observé attentivement vos opinions et préférences…
+
+tgt(lbl_Chap5_Results_Battles)
+desc(lbl_Chap5_Results_Battles)
+<b>Classement général des battles : </b>
+
+tgt(lbl_Chap5_Results_Swing)
+desc(lbl_Chap5_Results_Swing)
+<b>Classement général des tournées : </b>
+
+tgt(lbl_Chap5_inconsistent1st)
+desc(lbl_Chap5_inconsistent1st)
+Malheureusement, vos classements sont plutôt inconsistants. Veuillez choisir l’une des trois options suivantes :
+
+tgt(btn_Chap5_redo_Battles_1st)
+desc(btn_Chap5_redo_Battles_1st)
+Refaire uniquement le chapitre 3 (Battles)
+
+tgt(btn_Chap5_redo_Swing_1st)
+desc(btn_Chap5_redo_Swing_1st)
+Refaire uniquement le chapitre 4 (Tournées)
+
+tgt(btn_Chap5_redo_All_1st)
+desc(btn_Chap5_redo_All_1st)
+Refaire les chapitres 3 (Battles) et 4 (Tournées)
+
+tgt(lbl_Chap5_inconsistent_2orMore)
+desc(lbl_Chap5_inconsistent_2orMore)
+Malheureusement, vos classements demeurent plutôt inconsistants. Veuillez choisir l’une des quatre options suivantes :
+
+tgt(btn_Chap5_redo_Battles_2orMore)
+desc(btn_Chap5_redo_Battles_2orMore)
+Refaire uniquement le chapitre 3 (Battles)
+
+tgt(btn_Chap5_redo_Swing_2orMore)
+desc(btn_Chap5_redo_Swing_2orMore)
+Refaire uniquement le chapitre 4 (Tournées)
+
+tgt(btn_Chap5_redo_All_2orMore)
+desc(btn_Chap5_redo_All_2orMore)
+Refaire les chapitres 3 (Battles) et 4 (Tournées)
+
+tgt(btn_Chap5_proceed)
+desc(btn_Chap5_proceed)
+Passer à la scène suivante pour indiquer votre classement préféré.
+
+tgt(lbl_Chap5_Results_Battles_select)
+desc(lbl_Chap5_ Results_Battles_select)
+<b>Classement général des battles : </b>
+
+tgt(lbl_Chap5_Results_Swing_select)
+desc(lbl_Chap5_ Results_Swing_select)
+<b>Classement général des tournées : </b>
+
+tgt(lbl_Chap5_Results_Own_select)
+desc(lbl_Chap5_ Results_Own_select)
+<b>Faire un classement manuel </b>
+
+tgt(tuto_Chap5_Manual_ranking_Objectives)
+desc(tuto_Chap5_Manual_ranking_Objectives)
+Cliquez sur l’objectif le plus important pour vous, maintenez le bouton de la souris pressé et déplacez-le en haut du classement, avant de relâcher le bouton de la souris. De la même manière, glissez-déposez votre deuxième objectif préféré à la seconde place, et ainsi de suite jusqu’à obtenir le classement de votre choix !
+

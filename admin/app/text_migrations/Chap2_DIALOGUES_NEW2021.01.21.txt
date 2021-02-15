@@ -5,7 +5,7 @@ pos(0)
 Bonjour, que puis-je faire pour vous ?
 tgt(Player)
 pos(1)
-Bonjour, je suis [player’s name], candidat·e à la prochaine élection. Je me permets de vous interroger à propos de la gestion des eaux usées, pour connaître les opinions de mes concitoyen·e·s...
+Bonjour, je suis val(username), candidat·e à la prochaine élection. Je me permets de vous interroger à propos de la gestion des eaux usées, pour connaître les opinions de mes concitoyen·e·s...
 tgt(Objective0)
 pos(2)
 Ah ! La chose la plus importante est d’enlever la plus grande proportion de composés azotés, représentés par la formule chimique de l’azote sur mon t-shirt. Provenant de la matière organique (restes de nourriture et excréments) des eaux, certains composés azotés empoisonnent les poissons. Dans le meilleur cas, les systèmes enlèvent val(objective0:best)% de ces composés azotés, et au pire des cas seulement val(objective0:worst)%, ce qui est malheureusement le taux actuel.
@@ -50,7 +50,7 @@ pos(0)
 Bonjour, qu’est-ce qui vous amène ?
 tgt(Player)
 pos(1)
-Bonjour, je m’appelle val(username) et je suis candidat·e à la prochaine élection. Je me viensà votre rencontre à propos de la gestion des eaux usées, pour connaître les opinions de mes concitoyen·e·s.
+Bonjour, je m’appelle val(username) et je suis candidat·e à la prochaine élection. Je me viens à votre rencontre à propos de la gestion des eaux usées, pour connaître les opinions de mes concitoyen·e·s.
 tgt(Objective3)
 pos(2)
 Les systèmes de gestion des eaux consomment plus ou moins d’eau, qu’il est primordial d’économiser. En effet, l’eau est une ressource de plus en plus rare et précieuse. C’est pourquoi je porte une goutte d’eau sur mon cœur. L’utilisation de la chasse d’eau consomme actuellement et au pire, val(objective3:worst) litres par personne et par jour, et au mieux, les toilettes utilisent val(objective3:best) litres d’eau !
@@ -137,13 +137,13 @@ title(2.1.2_Dialogue_objective9)
 language(EN)
 tgt(Objective9)
 pos(0)
-Bonjour, cherchez-vous un renseignement ?tgt(Player)
+Bonjour, cherchez-vous un renseignement ?
+tgt(Player)
 pos(1)
 Bonjour, je me présente : val(username), candidat·e à la prochaine élection. Je me permets de vous rendre visite à propos de la gestion des eaux usées, pour connaître les opinions de mes concitoyen·e·s.
 tgt(Objective9)
 pos(2)
-Il faut penser à la flexibilité des systèmes entre les différentes générations, représentées sur mon symbole, surtout pour les générations futures ! Le système de traitement des eaux actuel a une durée d’utilisation restante de 17 ans après 2040, ce qui le rend peu adaptable si la population locale varie. l La durée d’utilisation restante après 2040   est de val(objective9:best) ans pour une installation très flexible, et de val(objective9:worst) ans pour une installation très inflexible. 
+Il faut penser à la flexibilité des systèmes entre les différentes générations, représentées sur mon symbole, surtout pour les générations futures ! Le système de traitement des eaux actuel a une durée d’utilisation restante de 17 ans après 2040, ce qui le rend peu adaptable si la population locale varie. Cette durée est de val(objective9:best) ans pour une installation très flexible, et de val(objective9:worst) ans pour une installation très inflexible. 
 tgt(Player)
 pos(3)
 Je vous remercie de m’avoir donné votre avis et ces détails ! J’en tiendrai compte au maximum. Au revoir !
-

@@ -1,5 +1,5 @@
 title(1.1_Interview_Chap1)
-language(EN)
+language(DE)
 tgt(Journalist)
 pos(0)
 Bienvenue ! Je vous remercie d’avoir accepté cet entretien. Nous sommes tou·te·s inquiets·ètes suite au problème de pollution des eaux découvert chez nos voisin·e·s. Quelle mauvaise nouvelle ! J’ai entendu dire que nos propres installations sanitaires sont vétustes et qu’un tel cas de figure pourrait très bien se produire aussi dans notre beau village !
@@ -20,7 +20,7 @@ pos(5)
 Six modèles d’infrastructures différentes qui pourraient être implémentées à Neuwässerli vous sont présentés ici, y compris leurs avantages et inconvénients.
 
 title(1.4_Outro_Chap1)
-language(EN)
+language(DE)
 tgt(Journalist)
 pos(0)
 Merci beaucoup pour toutes ces informations et pour ce classement ! Je vais pouvoir écrire un article intéressant.

@@ -1,0 +1,51 @@
+title(2.2.7_Intro_host_Chap4)
+language(DE)
+tgt(Host)
+pos(0)
+Alle Teilnehmenden sind jetzt an ihre Tische zurückgekehrt und sehr durstig! Begeben Sie sich in beliebiger Reihenfolge zu den jeweiligen Tafelrunden und schenken Sie den Aktivistinnen und Aktivisten ein Getränk ein. Füllen Sie nur die Gläser derjenigen Personen, die Sie mit ihren Argumenten am meisten überzeugen konnten. In unserem Dorf servieren wir die Getränke auf eine ganz besondere Art. Ich werde Sie anleiten. Ein kleiner Tipp: Seien Sie kohärent und stehen Sie zu Ihren vorhin geäusserten Meinungen!
+
+title(2.2.8.2_Swing_famA) 
+language(DE)
+tgt(host)
+pos(0)
+Dies ist die Tafelrunde der Aktivistinnen und Aktivisten, die sich gegen die Gewässerverschmutzung wehren. Stellen Sie sich den schlimmsten Fall vor: Fast alle Schadstoffe bleiben trotz Abwasserbehandlung im gereinigten Wasser zurück. Falls Sie die Möglichkeit hätten, die Situation zu verbessern, indem Sie höchstens eine der beiden Schadstoffkategorien aus dem Abwasser entfernen, welche würden Sie prioritär wählen?
+
+title(2.2.8.2_Swing_ famB) 
+language(DE)
+tgt(host)
+pos(0)
+Willkommen am Tisch der Aktivistinnen und Aktivisten, die sich für einen sparsamen Umgang mit den natürlichen Ressourcen einsetzen. Stellen Sie sich den schlimmsten Fall vor: Alle Ressourcen werden maximal ausgebeutet und kaum rückgewonnen. Falls Sie die Möglichkeit hätten, die Situation zu verbessern, indem Sie höchstens eine dieser Ressourcen der Rückgewinnung zuführen, welche würden Sie prioritär wählen?
+
+title(2.2.8.2_Swing_famC) 
+language(DE)
+tgt(host)
+pos(0)
+Dies ist die Tafelrunde der Aktivistinnen und Aktivisten, die sich für die Akzeptanz des Abwasseraufbereitungssystems seitens der Bevölkerung einsetzen. Stellen Sie sich den schlimmsten Fall vor: Das System ist zeitaufwendig, weder komfortabel noch attraktiv und stellt ein Risiko für die Gesundheit dar. Falls Sie die Möglichkeit hätten, die Situation zu verbessern, indem Sie höchstens eines dieser Akzeptanzkriterien erfüllen, welches würden Sie prioritär wählen?
+
+title(2.2.8.2_Swing_famD) 
+language(DE)
+tgt(host)
+pos(0)
+Das ist die Tafelrunde der Aktivistinnen und Aktivisten, denen es wichtig ist, dass die Kosten die heutigen und künftigen Generationen nur minimal belasten. Stellen Sie sich den schlimmsten Fall vor: Das System ist derzeit sehr kostenintensiv und auch nicht flexibel genug für die Zukunft. Falls Sie die Möglichkeit hätten, die Situation zu verbessern, indem Sie entweder die aktuellen Kosten oder die finanzielle Belastung der künftigen Generationen maximal senken könnten, welche Option würden Sie prioritär wählen?
+
+title(2.2.9_Swing_round2_Intro) 
+language(DE)
+tgt(host)
+pos(0)
+Der Abend neigt sich dem Ende zu, wechseln wir hinüber zur Bar! Sie können nun denjenigen Aktivistinnen und Aktivisten eine Runde spendieren, die Sie mit ihren Argumenten an den jeweiligen Tischen am meisten überzeugen konnten.
+
+title(2.2.10_Swing_round2) 
+language(DE)
+tgt(host)
+pos(0)
+Stellen Sie sich den schlimmsten Fall vor: Das System stösst kaum auf Akzeptanz, verschlingt viele Ressourcen, entfernt kaum die Schadstoffe aus dem Abwasser und stellt eine hohe Kostenbelastung für heutige und künftige Generationen dar. Falls Sie die Möglichkeit hätten, die Situation zu verbessern, indem Sie höchstens eines der Kriterien erfüllen, die von den Personen rund um die Bartheke gefordert werden, welches würden Sie prioritär wählen?
+
+title(2.2.8.2_Swing_Explanation_Singular)
+tgt(host)
+pos(0)
+Nun können Sie auch all denjenigen, die ein jeweils «schwächeres» Argument während der Tafelrunden hervorgebracht hatten, ein Getränk einschenken und ihnen aufzeigen, bis zu welchem Grad Sie sich auch für ihr Anliegen einsetzen werden, um das Beste aus der betreffenden Situation zu machen. Füllen Sie die Gläser dieser Aktivistinnen und Aktivisten im Verhältnis zur Gewichtung <i>relative</i> ihres jeweiligen Arguments gemessen am Argument der Person mit dem vollen Glas. Füllen Sie das Glas nur wenig, wenn Sie der Ansicht sind, dass das hervorgebrachte Argument deutlich weniger wichtig als dasjenige der Gegenpartei ist. Füllen Sie das Glas bis zur Hälfte, wenn es halb so wichtig ist, und bis zum Rand, wenn es genauso wichtig ist. Passen Sie den Füllstand der Gläser mithilfe Ihrer Maustaste an.
+
+title(2.2.8.2_Swing_Explanation_Plural)
+tgt(host)
+pos(0)
+Nun können Sie auch all denjenigen, die ein jeweils «schwächeres» Argument während der Tafelrunden hervorgebracht hatten, ein Getränk einschenken und ihnen aufzeigen, bis zu welchem Grad Sie sich auch für ihr Anliegen einsetzen werden, um das Beste aus der betreffenden Situation zu machen. Füllen Sie die Gläser dieser Aktivistinnen und Aktivisten im Verhältnis zur Gewichtung <i>relative</i> ihres jeweiligen Arguments gemessen am Argument der Person mit dem vollen Glas. Füllen Sie das Glas nur wenig, wenn Sie der Ansicht sind, dass das hervorgebrachte Argument deutlich weniger wichtig als dasjenige der Gegenpartei ist. Füllen Sie das Glas bis zur Hälfte, wenn es halb so wichtig ist, und bis zum Rand, wenn es genauso wichtig ist. Passen Sie den Füllstand der Gläser mithilfe Ihrer Maustaste an.

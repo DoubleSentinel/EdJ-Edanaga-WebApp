@@ -1,0 +1,8 @@
+scene(Chapter2.1)
+language(DE)
+tgt(lbl_Chap2_name)
+desc(lbl_Chap2_name)
+<b>Kapitel 2: Dialog mit den Aktivistinnen und Aktivisten</b>
+tgt(lbl_Chap2_text)
+desc(lbl_Chap2_text)
+Der Ball ist bei Ihnen! Suchen Sie das Gespräch mit jeder/jedem Einzelnen der 10 Aktivistinnen/Aktivisten, um zu erfahren, was ihre Beweggründe und Ziele sind.
