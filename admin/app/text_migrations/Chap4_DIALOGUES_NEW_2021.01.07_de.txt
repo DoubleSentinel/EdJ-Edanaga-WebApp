@@ -49,3 +49,4 @@ title(2.2.8.2_Swing_Explanation_Plural)
 tgt(host)
 pos(0)
 Nun können Sie auch all denjenigen, die ein jeweils «schwächeres» Argument während der Tafelrunden hervorgebracht hatten, ein Getränk einschenken und ihnen aufzeigen, bis zu welchem Grad Sie sich auch für ihr Anliegen einsetzen werden, um das Beste aus der betreffenden Situation zu machen. Füllen Sie die Gläser dieser Aktivistinnen und Aktivisten im Verhältnis zur Gewichtung <i>relative</i> ihres jeweiligen Arguments gemessen am Argument der Person mit dem vollen Glas. Füllen Sie das Glas nur wenig, wenn Sie der Ansicht sind, dass das hervorgebrachte Argument deutlich weniger wichtig als dasjenige der Gegenpartei ist. Füllen Sie das Glas bis zur Hälfte, wenn es halb so wichtig ist, und bis zum Rand, wenn es genauso wichtig ist. Passen Sie den Füllstand der Gläser mithilfe Ihrer Maustaste an.
+

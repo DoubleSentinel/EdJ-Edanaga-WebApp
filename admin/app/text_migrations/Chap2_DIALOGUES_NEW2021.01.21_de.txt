@@ -147,3 +147,4 @@ Die eingesetzten Systeme sollten so flexibel sein, dass sie auch für künftige 
 tgt(Player)
 pos(3)
 Ich danke Ihnen für Ihre Ansicht und Ihre Angaben zu diesem Thema. Ich werde sie wo immer möglich berücksichtigen. Auf Wiedersehen!
+
