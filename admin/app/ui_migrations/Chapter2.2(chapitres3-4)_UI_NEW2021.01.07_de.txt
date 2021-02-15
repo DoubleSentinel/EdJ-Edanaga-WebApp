@@ -3,21 +3,27 @@ language(DE)
 tgt(lbl_Chap3_name)
 desc(lbl_Chap3_name)
 <b>Kapitel 3: Debatten und Wortgefechte im <i>«Bargain»</i></b>
+
 tgt(lbl_Chap3_text)
 desc(lbl_Chap3_text)
 Sie sind zu einem geselligen Diskussionsabend zum Thema Abwassermanagement eingeladen, an dem Aktivistinnen und Aktivisten teilnehmen werden. Sie werden Ihren Standpunkt vertreten und versuchen, Kompromisse einzugehen.
+
 tgt(lbl_Chap3_Results_title)
 desc(lbl_Chap3_Results_title)
 <b>Ihre Rangliste der Aktivistinnen/Aktivisten</b>
+
 tgt(btn_Chap3_validate)
 desc(btn_Chap3_validate)
 Meine Rangzuordnung bestätigen
+
 tgt(btn_Chap3_redo)
 desc(btn_Chap3_redo)
 Kapitel neu starten
+
 tgt(lbl_Chap4_name)
 desc(lbl_Chap4_name)
 <b>Kapitel 4: Den Abend begiessen</b>
+
 tgt(lbl_Chap4_text)
 desc(lbl_Chap4_text)
 Nach der Diskussionsrunde ist es an der Zeit, die Teilnehmenden mit Getränken zu versorgen – allen voran Wasser, aber es können auch andere sein! Da es Ihre Wahlveranstaltung ist, können Sie die Argumente einzelner Aktivistinnen/Aktivisten höher bewerten als andere.
